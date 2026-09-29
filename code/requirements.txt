@@ -1,0 +1,8 @@
+# 本包脚本不依赖任何第三方库
+#
+# 全部只用 Python 3 标准库：argparse / csv / hashlib / io / json / os /
+# re / sys / time / urllib / collections
+#
+# 参考：Python 3.10 起可运行（实测环境 3.13.12）。
+# 若需与配套仓 chinese-calendar-dataset 的生成器同环境，其 requirements.txt
+# 另含 skyfield / skyfield-data —— 那是历日推算所需，本包用不到。

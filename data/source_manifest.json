@@ -1,0 +1,94 @@
+{
+ "title": "中国历法与古天文学术语对照表（中英双语）",
+ "generated_by": "code/build_glossary.py",
+ "source_pages": [
+  {
+   "file": "glossary_zh.html",
+   "bytes": 251994,
+   "md5": "2f51e8b615eaef9d52cd4bf8bd01c6c8",
+   "revision_date": "2026-09-26",
+   "date_published": "2026-09-23T10:13:59+00:00",
+   "date_modified": "2026-09-26T10:48:59+00:00"
+  },
+  {
+   "file": "glossary_en.html",
+   "bytes": 268278,
+   "md5": "642182fa2d61955e74c4425bf495dcb5",
+   "revision_date": "2026-09-26",
+   "date_published": "2026-09-23T10:13:57+00:00",
+   "date_modified": "2026-09-26T10:43:48+00:00"
+  }
+ ],
+ "stated_by_source": {
+  "terms_zh_page": 279,
+  "terms_en_page": 279,
+  "groups_zh_page": "十九组",
+  "subclasses_zh_page": 25
+ },
+ "english_revisions": {
+  "count": 5,
+  "reason": "源页 term_en 列作 ganzhi / sixty-day，而同一页 def_en 本就一律用 stem-branch（共 8 处）；本仓据以统一，并把「完整一轮」交回 sexagenary cycle，与「两套符号」分工。",
+  "items": [
+   {
+    "term_zh": "干支",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "before": "ganzhi / stem-branch",
+    "after": "stem-branch"
+   },
+   {
+    "term_zh": "干支纪日",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "before": "ganzhi day-count",
+    "after": "stem-branch day-count"
+   },
+   {
+    "term_zh": "干支纪年",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "before": "ganzhi year-count",
+    "after": "stem-branch year-count"
+   },
+   {
+    "term_zh": "六十甲子",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "before": "the sixty-day cycle",
+    "after": "sexagenary cycle"
+   },
+   {
+    "term_zh": "六十甲子纳音",
+    "group_zh": "十九 · 术数择日",
+    "before": "the nayin of the sixty-day cycle",
+    "after": "the nayin of the sexagenary cycle"
+   }
+  ]
+ },
+ "counts": {
+  "terms": 279,
+  "groups": 19,
+  "subclasses": 25,
+  "classes": 6,
+  "appendices": 2,
+  "parity_mismatch": 0,
+  "classes_table_total_vs_measured": [
+   293,
+   279
+  ]
+ },
+ "termonline": {
+  "none": 111,
+  "near": 21,
+  "exact": 147
+ },
+ "files": {
+  "glossary_zh_en.csv": 141251,
+  "glossary_zh_en.json": 219128,
+  "glossary_zh_en.jsonl": 205185,
+  "classes.csv": 505,
+  "appendix_1.csv": 2109,
+  "appendix_2.csv": 769,
+  "verification_parity.csv": 33270,
+  "verification_term_revisions.csv": 1576,
+  "verification_stated_vs_measured.csv": 540,
+  "verification_classes.csv": 715,
+  "glossary_term_set.jsonld": 113779
+ }
+}

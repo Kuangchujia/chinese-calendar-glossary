@@ -1,0 +1,16 @@
+# 字节码与缓存
+__pycache__/
+*.py[cod]
+
+# 上载状态文件（含 deposition id / 桶链接，属本地工作状态，不入库）
+zenodo_state.json
+
+# 系统杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 源页 HTML 快照（约 520 KB，含站点导航与样式等样板，不入库）
+# 复现方式：python code/fetch_source.py --out _source
+# 源页的身份与指纹另记于 data/source_manifest.json（文件名／字节数／md5）
+_source/

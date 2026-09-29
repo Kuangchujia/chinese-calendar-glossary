@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "中国历法与古天文学术语对照表（中英双语）"
+abstract: >-
+  一份中英双语对照的中国历法与古天文学术语表。主表 279 条术语，分 19 组，
+  每条给出中文名、英文定译、分类标签（中英）、中文释义与英文释义，并逐条标出
+  与「术语在线」（全国科学技术名词审定委员会）的对应关系（同名 147 条 / 近名
+  21 条 / 未收 111 条）。另附两张独立对照表：二十八宿距星三源对照（唐《开元
+  占经》卷一百六 / 元《宋史·天文志》/ 明清以来今通用，28 行）、二十八宿星官
+  与星数（28 行）。中文页与英文页逐条对拍 279/279 一致。术语对照关系属通用数表
+  性质；释义为作者原创表述，以 CC BY 4.0 授权。
+authors:
+  - family-names: "邝"
+    given-names: "楚嘉"
+    alias: "虚竹"
+    orcid: "https://orcid.org/0009-0002-7650-833X"
+version: "1.0.0"
+date-released: "2026-09-29"
+license: "CC-BY-4.0"
+language: "zho"
+identifiers:
+  - type: other
+    value: "https://openalex.org/A5151908354"
+    description: "OpenAlex author index — 邝楚嘉（Chujia Kuang）"
+  - type: url
+    value: "https://kuangchujia.com"
+    description: "Author hub — 全部成果总入口"
+keywords:
+  - 术语表
+  - 中英对照
+  - 中国历法
+  - 古天文学
+  - 二十八宿
+  - 三垣
+  - 节气
+  - 干支
+  - 距星
+  - glossary
+  - Chinese English
+  - Chinese calendar
+  - uranography
+  - twenty-eight mansions
+  - terminology

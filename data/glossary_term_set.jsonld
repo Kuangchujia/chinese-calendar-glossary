@@ -1,0 +1,2535 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTermSet",
+ "@id": "https://github.com/Kuangchujia/chinese-calendar-glossary#termset",
+ "name": "中国历法与古天文学术语对照表（中英双语）",
+ "alternateName": "Chinese Calendrical & Uranographical Glossary (Chinese–English)",
+ "description": "中国历法与古天文学术语 279 条，分 19 组，每条给中文名、英文定译、中文释义与英文释义，另标一级分类（6 个）与二级子类（25 个）。",
+ "inLanguage": [
+  "zh-CN",
+  "en"
+ ],
+ "version": "1.0.0",
+ "datePublished": "2026-09-23T10:13:59+00:00",
+ "dateModified": "2026-09-26T10:48:59+00:00",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "creator": {
+  "@type": "Person",
+  "name": "邝楚嘉",
+  "alternateName": "Chujia Kuang",
+  "identifier": "https://orcid.org/0009-0002-7650-833X"
+ },
+ "hasDefinedTerm": [
+  {
+   "@type": "DefinedTerm",
+   "identifier": "1",
+   "name": "历法",
+   "alternateName": "calendar / calendrical system",
+   "termCode": "历法术语 · 总论",
+   "description": "为配合日常需要、依据天象定出的计时系统：推排年、月、日的长度与相互关系。中国传统的这一套是阴阳合历。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "2",
+   "name": "阴阳合历",
+   "alternateName": "lunisolar calendar",
+   "termCode": "历法术语 · 历代历法",
+   "description": "同时照看太阳与月亮的历法：月从朔望定，年从回归年定，两者之差用闰月补齐。把中国的农历叫作「阴历」并不准确。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "3",
+   "name": "阳历",
+   "alternateName": "solar calendar",
+   "termCode": "历法术语 · 历代历法",
+   "description": "只照看太阳、不问月相的历法：年的长度从回归年定，月只是年的等分。现行的公历即阳历。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "4",
+   "name": "阴历",
+   "alternateName": "lunar calendar",
+   "termCode": "历法术语 · 历代历法",
+   "description": "只照看月相、不问太阳的历法：月从朔望定，年只是十二个月的累积。伊斯兰历即阴历。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "5",
+   "name": "历书",
+   "alternateName": "almanac",
+   "termCode": "律历制度 · 文献",
+   "description": "依历法排出的一年历日，逐日注出朔望、节气、干支与宜忌。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "6",
+   "name": "历日",
+   "alternateName": "calendrical day",
+   "termCode": "历法术语 · 总论",
+   "description": "历书上所记的某一天：某年某月某日，附干支。历法是法，历日是法排出来的那一天——两者是两个层次。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "7",
+   "name": "历注",
+   "alternateName": "calendrical annotation",
+   "termCode": "律历制度 · 制度",
+   "description": "历日之下所注的宜忌、吉凶、神煞一类文字。历代对历注的取舍不一，也是改历时争论最多的一项。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "8",
+   "name": "历元",
+   "alternateName": "calendar epoch",
+   "termCode": "历法术语 · 历算",
+   "description": "一部历法推算的起算点。上元是理想化的、各项周期同时起算的那一点。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "9",
+   "name": "上元",
+   "alternateName": "grand epoch",
+   "termCode": "历法术语 · 历算",
+   "description": "历法推算最理想的起算点：设想某年十一月甲子日夜半，恰好合朔、冬至，日月五星又各在其位。取上元是为了让一切周期同时起算。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "10",
+   "name": "上元积年",
+   "alternateName": "years from the grand epoch",
+   "termCode": "历法术语 · 历算",
+   "description": "从理想上元到本年所积的年数。这个数往往极大，唐以后渐有主张废去上元、直接以实测起算的。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "11",
+   "name": "岁实",
+   "alternateName": "length of the tropical year",
+   "termCode": "历法术语 · 历算",
+   "description": "一个回归年的日数。历代历法都要先定出这个数，才有后面的排历。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "12",
+   "name": "朔策",
+   "alternateName": "length of the synodic month",
+   "termCode": "历法术语 · 历算",
+   "description": "一个朔望月的平均日数。与岁实相配，才能定出一年要插几个闰月。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "13",
+   "name": "岁周",
+   "alternateName": "sidereal year",
+   "termCode": "历法术语 · 历算",
+   "description": "太阳从某恒星回到同一恒星所历的时间。它比岁实（回归年）略长，两者之差即岁差所致。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "14",
+   "name": "岁实消长",
+   "alternateName": "variation of the tropical year",
+   "termCode": "历法术语 · 历算",
+   "description": "认为回归年长度本身有增减之说。明清之际有人据实测主张古今岁实不同，这是当时主张改历的一条理由。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "15",
+   "name": "日法",
+   "alternateName": "day divisor",
+   "termCode": "历法术语 · 历算",
+   "description": "一部历法把一日所分成的份数。同一日长，或取九百四十、或取一万，各历不同；历中一切数值都以它为分母。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "16",
+   "name": "调日法",
+   "alternateName": "method of adjusting the day divisor",
+   "termCode": "历法术语 · 历算",
+   "description": "南北朝何承天所创：把实测所得的强弱两个分数，按需要增减分子分母，凑出一个合用又不至太繁的日法。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "17",
+   "name": "强弱率",
+   "alternateName": "strong and weak rates",
+   "termCode": "历法术语 · 历算",
+   "description": "调日法所用的两个分数：一个偏大、一个偏小，真值在其间。两者依次增减，可得越来越接近真值的近似分数。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "18",
+   "name": "内插法",
+   "alternateName": "interpolation",
+   "termCode": "历法术语 · 历算",
+   "description": "由若干已知点的数值，推算中间某点的值。隋《皇极历》用等间距二次内插推日月行度，唐《大衍历》改用不等间距。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "19",
+   "name": "大余・小余",
+   "alternateName": "integer and fraction of a count",
+   "termCode": "历法术语 · 历算",
+   "description": "历法算出的两个数：大余是整数部分，小余是分数部分。前者给出干支日序，后者给出具体时刻。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "20",
+   "name": "通法",
+   "alternateName": "common divisor",
+   "termCode": "历法术语 · 历算",
+   "description": "唐《崇玄历》一类历法中，历中数值还须除以这个数，才得日单位的长度。与「日法」同名异实，各家用法不一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-1"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "21",
+   "name": "岁首",
+   "alternateName": "year-beginning",
+   "termCode": "历法术语 · 月建",
+   "description": "一年的头一天定在哪个月的哪一日。中国历史上改过多次，见 Calendar Reform 一栏。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "22",
+   "name": "正朔",
+   "alternateName": "the first month and the first day",
+   "termCode": "历法术语 · 月建",
+   "description": "一年之始的正月与一月之始的朔日，合起来指一个王朝所颁行的历。改朝换代而改历，就叫「改正朔」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "23",
+   "name": "改正朔",
+   "alternateName": "to correct the first month and day",
+   "termCode": "律历制度 · 制度",
+   "description": "新朝立国重定岁首与正月的制度。汉初仍用秦制，至《太初历》才改正朔、以正月为岁首。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "24",
+   "name": "斗建／月建",
+   "alternateName": "doujian / yuejian",
+   "termCode": "历法术语 · 月建",
+   "description": "用北斗斗柄所指的方向给十二个月定位。柄指寅，这个月叫「建寅之月」。「建」即斗柄所指。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "25",
+   "name": "建正",
+   "alternateName": "jianzheng",
+   "termCode": "历法术语 · 月建",
+   "description": "十二个月里，把哪一个定为一年之首。以寅为首叫「建寅」，以子为首叫「建子」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "26",
+   "name": "三正",
+   "alternateName": "san zheng",
+   "termCode": "历法术语 · 月建",
+   "description": "夏、商、周三代岁首制度的合称：夏建寅（正月）、殷建丑（十二月）、周建子（十一月）。秦及汉初用建亥，至《太初历》恢复建寅。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "27",
+   "name": "孟仲季",
+   "alternateName": "meng, zhong, ji",
+   "termCode": "历法术语 · 月建",
+   "description": "一季三个月的次序称法：孟（头一月）、仲（中间）、季（末一月），如孟春、仲春、季春。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "28",
+   "name": "月序",
+   "alternateName": "the order of the months",
+   "termCode": "历法术语 · 月建",
+   "description": "一年十二个月的排列与名称。历法一改，月序也随岁首而变：建寅即以寅月为正月。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "29",
+   "name": "朔旦冬至",
+   "alternateName": "the conjunction at the winter solstice",
+   "termCode": "历法术语 · 历算",
+   "description": "合朔与冬至落在同一天的黎明。古人以此为推算的基准点，也是取上元时所要求的条件之一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "30",
+   "name": "闰月",
+   "alternateName": "intercalary month",
+   "termCode": "历法术语 · 置闰",
+   "description": "为对齐回归年与朔望月的长度差而多出来的那一个月。加在哪个月，历代规则不一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "31",
+   "name": "闰周",
+   "alternateName": "intercalation cycle",
+   "termCode": "历法术语 · 置闰",
+   "description": "多少年该安插多少个闰月的成规，如十九年七闰。唐《麟德历》废去闰周，改为随实测随时补闰。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "32",
+   "name": "章",
+   "alternateName": "zhang",
+   "termCode": "历法术语 · 置闰",
+   "description": "十九年为一章，是置闰的基本周期：一章之内，朔望月与回归年恰好相齐（十九年七闰）。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "33",
+   "name": "十九年七闰",
+   "alternateName": "the nineteen-year cycle",
+   "termCode": "历法术语 · 置闰",
+   "description": "阴阳合历置闰的成法：十九个回归年约合二百三十五个朔望月，故十九年中安插七个闰月。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "34",
+   "name": "十三月",
+   "alternateName": "the thirteenth month",
+   "termCode": "历法术语 · 置闰",
+   "description": "上古置闰于岁末时所用的月名：闰月排在十二月之后，就叫十三月。殷墟卜辞里已有此称。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "35",
+   "name": "无中气置闰",
+   "alternateName": "intercalating the month without a mid-term",
+   "termCode": "历法术语 · 置闰",
+   "description": "汉《太初历》以后的置闰规则：哪一个月里没有中气，哪一个月就定为闰月。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "36",
+   "name": "置闰法",
+   "alternateName": "the rule of intercalation",
+   "termCode": "历法术语 · 置闰",
+   "description": "决定闰月安插位置与年度的办法总称。历代有岁末置闰、无中气置闰等不同做法。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-2"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "37",
+   "name": "二十四节气",
+   "alternateName": "the Twenty-Four Solar Terms",
+   "termCode": "历法术语 · 节气",
+   "description": "依太阳在黄道上的位置划分的二十四个节点，每约十五度一个。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "38",
+   "name": "节",
+   "alternateName": "node (major solar term)",
+   "termCode": "历法术语 · 节气",
+   "description": "二十四节气中排在月首的十二个，是月的分界线。立春、惊蛰一类属「节」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "39",
+   "name": "中气／气",
+   "alternateName": "breath (mid-term)",
+   "termCode": "历法术语 · 节气",
+   "description": "二十四节气中排在月中的十二个。雨水、春分一类属「气」。节与气交替，合起来才是二十四节气。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "40",
+   "name": "交节时刻",
+   "alternateName": "instant of a solar term",
+   "termCode": "历法术语 · 节气",
+   "description": "太阳在黄道上走到某一特定度数的那一瞬。它是一个时刻，不是一整天。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "41",
+   "name": "黄经",
+   "alternateName": "solar longitude",
+   "termCode": "天文基础 · 坐标",
+   "description": "太阳在黄道上、从春分点量起的角度。节气就是黄经的整数倍刻度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "42",
+   "name": "分至启闭",
+   "alternateName": "the eight principal terms",
+   "termCode": "历法术语 · 节气",
+   "description": "二十四节气里最先被定出的八个：春分、秋分、夏至、冬至，加立春、立夏、立秋、立冬。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "43",
+   "name": "平气",
+   "alternateName": "mean solar term",
+   "termCode": "历法术语 · 节气",
+   "description": "把一个回归年等分成二十四份来定节气。不知日行有迟速时的做法，与平朔同时行用。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "44",
+   "name": "定气",
+   "alternateName": "true solar term",
+   "termCode": "历法术语 · 节气",
+   "description": "按太阳在黄道上实际走到某一度数来定节气。清《时宪历》起改用定气注历，沿用至今。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "45",
+   "name": "候／物候",
+   "alternateName": "phenological period",
+   "termCode": "历法术语 · 节气",
+   "description": "节气是天上那把尺子走到哪儿了，候是地上你看见什么了。候比气慢着差不多一个月。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "46",
+   "name": "候应",
+   "alternateName": "phenological sign",
+   "termCode": "历法术语 · 节气",
+   "description": "七十二候中每一候所对应的自然现象，如「东风解冻」「桃始华」。有植物、动物、非生物三类。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "47",
+   "name": "七十二候",
+   "alternateName": "the seventy-two periods",
+   "termCode": "历法术语 · 节气",
+   "description": "把二十四节气各分三候、每候约五日，共七十二候。完整记载见《逸周书·时训解》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "48",
+   "name": "启蛰",
+   "alternateName": "awakening of the dormant",
+   "termCode": "历法术语 · 节气",
+   "description": "二十四节气中惊蛰的旧名。汉时因避景帝刘启之名改写作「惊蛰」，两个字是同一层意思的改写。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "49",
+   "name": "月令",
+   "alternateName": "monthly ordinances",
+   "termCode": "律历制度 · 文献",
+   "description": "按月排比天象、物候与政令的体裁。《礼记·月令》是这种体裁的代表，也是节气系统的前身。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "50",
+   "name": "三伏",
+   "alternateName": "the three fu",
+   "termCode": "历法术语 · 节气",
+   "description": "一年中最热的三段时间，从夏至后第三个庚日起算。它以干支纪日为准，与节气是两套并行的刻度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "51",
+   "name": "九九",
+   "alternateName": "the nine nines",
+   "termCode": "历法术语 · 节气",
+   "description": "从冬至起每九天为一段，历八十一天。是冬季的民间冷暖刻度，也是历书上的常见注记。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "52",
+   "name": "社日",
+   "alternateName": "the day of the earth god",
+   "termCode": "历法术语 · 节气",
+   "description": "春秋各一次，以立春、立秋后的第五个戊日为准。与三伏同一算法，都由干支定日。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "53",
+   "name": "节气注历",
+   "alternateName": "solar terms entered in the almanac",
+   "termCode": "历法术语 · 节气",
+   "description": "把二十四节气逐日注在历书上。汉《太初历》首次完整编入，清《时宪历》起改用定气注历。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-3"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "54",
+   "name": "干支",
+   "alternateName": "stem-branch",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十天干与十二地支依次相配、六十组一轮的编号法。「干支」原写作「幹枝」，即树干与枝条，起初并不是一组序数符号。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "55",
+   "name": "天干",
+   "alternateName": "heavenly stems",
+   "termCode": "天文基础 · 时间系统",
+   "description": "甲、乙、丙、丁、戊、己、庚、辛、壬、癸，共十个。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "56",
+   "name": "地支",
+   "alternateName": "earthly branches",
+   "termCode": "天文基础 · 时间系统",
+   "description": "子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥，共十二个。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "57",
+   "name": "六十甲子",
+   "alternateName": "sexagenary cycle",
+   "termCode": "天文基础 · 时间系统",
+   "description": "干支相配的完整一轮。两条序列本可排出 120 个有序对，只因配对限定在同类之内，才只剩六十。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "58",
+   "name": "干支纪日",
+   "alternateName": "stem-branch day-count",
+   "termCode": "天文基础 · 时间系统",
+   "description": "用干支给每一天编号。这套编号连续不断，可用来核对历日。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "59",
+   "name": "干支纪年",
+   "alternateName": "stem-branch year-count",
+   "termCode": "天文基础 · 时间系统",
+   "description": "用干支给年份编号。东汉元和二年（85 年）才以政令推行全国，此前纪年多用岁星、太岁或年号。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "60",
+   "name": "旬",
+   "alternateName": "the ten-day week",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十干轮完一轮为一旬，即十日。殷墟卜辞已按旬记日，旬末有卜旬之例。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "61",
+   "name": "年号纪年",
+   "alternateName": "reign-title dating",
+   "termCode": "天文基础 · 时间系统",
+   "description": "以皇帝的年号加序号纪年，如「贞观元年」。汉武帝建元为中国年号纪年之始。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "62",
+   "name": "岁星纪年",
+   "alternateName": "Jupiter year-reckoning",
+   "termCode": "天文基础 · 时间系统",
+   "description": "以木星所在的星次纪年，如「岁在星纪」。木星约十二年行一周天，古人称之为岁星。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "63",
+   "name": "太岁纪年",
+   "alternateName": "counter-Jupiter year-reckoning",
+   "termCode": "天文基础 · 时间系统",
+   "description": "岁星自西向东而行，与十二辰方向相反，古人另设一个反向运行的假想天体「太岁」来纪年，由此有摄提格等十二岁名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "64",
+   "name": "十二次",
+   "alternateName": "the Twelve Jupiter Stations",
+   "termCode": "天文基础 · 坐标",
+   "description": "沿黄道划分的十二个星区，依次为星纪、玄枵、娵訾等，用于岁星纪年。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "65",
+   "name": "十二辰",
+   "alternateName": "the twelve earthly stations",
+   "termCode": "天文基础 · 坐标",
+   "description": "沿天球一周按子丑寅卯等十二支划分的区域，方向与十二次相反，用于太岁纪年与分野。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "66",
+   "name": "摄提格",
+   "alternateName": "shetige",
+   "termCode": "天文基础 · 时间系统",
+   "description": "太岁在寅之年的岁名，为十二岁名之一；其余为单阏、执徐、大荒落、敦牂、协洽、涒滩、作噩、阉茂、大渊献、困敦、赤奋若。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "67",
+   "name": "岁阳",
+   "alternateName": "the ten year-names",
+   "termCode": "天文基础 · 时间系统",
+   "description": "西汉历家给十干另取的十个名称：阏逢、旃蒙、柔兆、强圉、著雍、屠维、上章、重光、玄黓、昭阳。与十二岁名相配，成六十个年名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "68",
+   "name": "超辰",
+   "alternateName": "the leap of the year station",
+   "termCode": "天文基础 · 时间系统",
+   "description": "岁星实际约 11.86 年一周天，积久便会超过按十二年一轮所推的位置一次。历家称之为超辰，也是后来改用干支纪年的一个缘由。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "69",
+   "name": "分野",
+   "alternateName": "field-allocation",
+   "termCode": "星宿与星官 · 星官",
+   "description": "把天上的星次、星宿与地上的州国相配，以星象占其吉凶。配法历代不一，是星占与历法共用的框架。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "70",
+   "name": "时辰",
+   "alternateName": "the double-hour (shichen)",
+   "termCode": "天文基础 · 时间系统",
+   "description": "把一天分成十二段，每段对应一个地支，各两小时。子时起于二十三时。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "71",
+   "name": "更",
+   "alternateName": "the night watch",
+   "termCode": "天文基础 · 时间系统",
+   "description": "夜里分五更，用于报时。更点与十二时辰是两套并行的夜间刻度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "72",
+   "name": "点",
+   "alternateName": "the point",
+   "termCode": "天文基础 · 时间系统",
+   "description": "更以下的刻度：一夜五更，每更五点。更、点用于报时，历书上记的则是时辰。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "73",
+   "name": "刻",
+   "alternateName": "the quarter (ke)",
+   "termCode": "天文基础 · 时间系统",
+   "description": "一日分为一百刻，每刻约十四分二十四秒；清康熙九年改用九十六刻，每刻十五分钟，与今制同。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "74",
+   "name": "二十四时",
+   "alternateName": "the twenty-four hours",
+   "termCode": "天文基础 · 时间系统",
+   "description": "把每个时辰分为「初」「正」两半，十二时辰遂成二十四段，与今日的小时相当。西洋钟表传入后通行。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "75",
+   "name": "漏刻",
+   "alternateName": "the water clock",
+   "termCode": "律历制度 · 观测方法",
+   "description": "以壶盛水、看箭上刻度计时的器具。冬至昼短夜长，刻数随之增减，历代历法都要给出昼夜刻分。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "76",
+   "name": "朔",
+   "alternateName": "new moon",
+   "termCode": "天象类 · 月相",
+   "description": "日月黄经相同、月亮不可见的时刻，即农历每月初一所在的那一天。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "77",
+   "name": "望",
+   "alternateName": "full moon",
+   "termCode": "天象类 · 月相",
+   "description": "满月的时刻，约在十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "78",
+   "name": "上弦／下弦",
+   "alternateName": "first / last quarter",
+   "termCode": "天象类 · 月相",
+   "description": "月亮走到黄经相差九十度与二百七十度时，各见半个月面。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "79",
+   "name": "晦",
+   "alternateName": "the last day of the month",
+   "termCode": "天象类 · 月相",
+   "description": "每月的最后一日，即下一朔的前一日。晦与朔相接，是月相周期的收尾。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "80",
+   "name": "胐",
+   "alternateName": "fei",
+   "termCode": "天象类 · 月相",
+   "description": "农历每月初三，月始生明之时。《尚书·召诰》有「三月，惟丙午胐」之记。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "81",
+   "name": "既生霸／既死霸",
+   "alternateName": "after the birth / after the death of the light",
+   "termCode": "天象类 · 月相",
+   "description": "西周金文记月相的两个词：「生霸」谓月始明，「死霸」谓月始晦。如何系日，是西周年代学的百年难题。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "82",
+   "name": "定朔",
+   "alternateName": "true new moon",
+   "termCode": "历法术语 · 历算",
+   "description": "以真实的合朔时刻定初一，而不是用平均值推算。三国时《乾象历》始创此法。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "83",
+   "name": "平朔",
+   "alternateName": "mean new moon",
+   "termCode": "历法术语 · 历算",
+   "description": "以平均朔望月长度推算的朔。与定朔相对，算法简单但与天不合。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "84",
+   "name": "经朔",
+   "alternateName": "the mean conjunction",
+   "termCode": "历法术语 · 历算",
+   "description": "平朔的又一名称。唐《麟德历》以后，历书多在经朔之上加减改正，才得定朔。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "85",
+   "name": "月离",
+   "alternateName": "the moon’s motion",
+   "termCode": "历法术语 · 历算",
+   "description": "月亮在恒星背景上的运行。月的行度有迟有疾，历法须逐日列出，称为月离表。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "86",
+   "name": "入转",
+   "alternateName": "entry into the anomalistic cycle",
+   "termCode": "历法术语 · 历算",
+   "description": "指某时刻距月亮过近地点的时间。月亮过近地点后行速渐减，历法据此校正月行。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "87",
+   "name": "迟疾",
+   "alternateName": "slowness and swiftness",
+   "termCode": "历法术语 · 历算",
+   "description": "日月运行速度的不均匀。唐以后各历都专设迟疾一术，用以修正平朔、平气。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "88",
+   "name": "交食",
+   "alternateName": "eclipse",
+   "termCode": "天象类 · 日月食",
+   "description": "日月食的合称。历法能预推交食的时刻与食分，是检验一部历法精粗的硬指标。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "89",
+   "name": "日食",
+   "alternateName": "solar eclipse",
+   "termCode": "天象类 · 日月食",
+   "description": "月亮遮住太阳。只在朔日可能发生，又因白道与黄道有交角，并非每次朔日都有。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "90",
+   "name": "月食",
+   "alternateName": "lunar eclipse",
+   "termCode": "天象类 · 日月食",
+   "description": "地球的影子遮住月亮。只在望日可能发生。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "91",
+   "name": "入交",
+   "alternateName": "entry into the node",
+   "termCode": "天象类 · 日月食",
+   "description": "日月行至黄白两道交点附近。历法先算入交时刻与交分，才判断是否发生交食。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "92",
+   "name": "食分",
+   "alternateName": "magnitude of an eclipse",
+   "termCode": "天象类 · 日月食",
+   "description": "交食时被遮去的部分，以分数表示。食分的大小由历法推算，再与所见的相参验。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-5"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "93",
+   "name": "黄道",
+   "alternateName": "ecliptic",
+   "termCode": "天文基础 · 坐标",
+   "description": "太阳一年在恒星之间走过的那条路。节气就刻在这条路上。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "94",
+   "name": "白道",
+   "alternateName": "lunar path",
+   "termCode": "天文基础 · 坐标",
+   "description": "月亮运行的轨道。它与黄道之间有一个约五度的夹角，所以并非每次朔望都有食。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "95",
+   "name": "赤道",
+   "alternateName": "celestial equator",
+   "termCode": "天文基础 · 坐标",
+   "description": "把地球赤道面延伸到天球上所得的大圆。与黄道相交于春分、秋分两点。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "96",
+   "name": "黄赤交角",
+   "alternateName": "obliquity of the ecliptic",
+   "termCode": "天文基础 · 坐标",
+   "description": "黄道与赤道之间的夹角，约二十三度半。战国石申已有测量，后世历法多以它为常数。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "97",
+   "name": "三垣",
+   "alternateName": "the Three Enclosures",
+   "termCode": "星宿与星官 · 三垣",
+   "description": "紫微垣、太微垣、天市垣，中国古代对北天中央一带的三片划分。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "98",
+   "name": "二十八宿",
+   "alternateName": "the Twenty-Eight Mansions",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "沿黄道赤道一带划分的二十八个星区，用作量天的刻度。宿名现存最早的实物证据之一，是曾侯乙墓出土漆木箱上的题记。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "99",
+   "name": "距星",
+   "alternateName": "determinative star",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "每一宿里用来标定该宿位置的标志星。历代所定不尽相同。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "100",
+   "name": "距度",
+   "alternateName": "extent of a mansion",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "相邻两宿距星之间的赤经差，即这一宿的宽度。二十八宿宽窄极不均，正因如此才须逐宿记度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "101",
+   "name": "去极度",
+   "alternateName": "polar distance",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体到北天极的角距离，相当于今日的九十度减赤纬。中国古代用它与入宿度合起来定一颗星的位置。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "102",
+   "name": "入宿度",
+   "alternateName": "mansion entry",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体距其西侧第一颗距星的赤经差。中国的赤道坐标以二十八宿距星为起算点，起点不是一个而是二十八个。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "103",
+   "name": "四象",
+   "alternateName": "the Four Images",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "青龙、白虎、朱雀、玄武，与二十八宿分属东、西、南、北四方。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "104",
+   "name": "岁差",
+   "alternateName": "precession",
+   "termCode": "天文基础 · 坐标",
+   "description": "地球自转轴的缓慢进动，使春分点沿黄道缓慢西退。《大明历》首次把它引入历法。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "105",
+   "name": "中星",
+   "alternateName": "culminating star",
+   "termCode": "天文基础 · 坐标",
+   "description": "黄昏或拂晓时正南方的星。上古以「昏见」「旦中」的星定季节，是节气之前的季节标尺。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "106",
+   "name": "昏旦中星",
+   "alternateName": "the culminating star at dusk and dawn",
+   "termCode": "天文基础 · 坐标",
+   "description": "历书中逐月列出的黄昏、拂晓中星。自《尚书·尧典》的四仲中星起，历代历法都载此项。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "107",
+   "name": "日躔",
+   "alternateName": "the sun’s course",
+   "termCode": "天文基础 · 坐标",
+   "description": "太阳在恒星间的位置与行度。历法按节气列出太阳的入宿度与去极度，称为日躔表。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "108",
+   "name": "昏见・晨见",
+   "alternateName": "heliacal rising and setting",
+   "termCode": "天象类 · 特殊天象",
+   "description": "某星于黄昏初现东方或拂晓初现东方。上古物候与月令多以它为节令标记。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "109",
+   "name": "度",
+   "alternateName": "degree",
+   "termCode": "天文基础 · 坐标",
+   "description": "周天分为三百六十五度又四分度之一，与一年的日数相配，故太阳一日恰行一度。这与今日圆周三百六十度不同。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "110",
+   "name": "分",
+   "alternateName": "subdivisions of a degree",
+   "termCode": "天文基础 · 坐标",
+   "description": "度以下的单位，各历取法不同，或分百、或分千、或分万，与日法一样是各立其数。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "111",
+   "name": "子午",
+   "alternateName": "the meridian",
+   "termCode": "天文基础 · 坐标",
+   "description": "过天顶的南北大圆。测影定方向的「正南正北线」即子午线，历法上的一切时刻都以过中天为准。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "112",
+   "name": "地平",
+   "alternateName": "the horizon",
+   "termCode": "天文基础 · 坐标",
+   "description": "观测者所见的地面与天球的交线。日出于地平为旦，没于地平为昏。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "113",
+   "name": "恒星",
+   "alternateName": "fixed star",
+   "termCode": "天文基础 · 天体",
+   "description": "位置长期不变的星，与行星相对。二十八宿的距星与三垣的星官都是恒星，古人测天即以它们为背景。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "114",
+   "name": "行星",
+   "alternateName": "planet",
+   "termCode": "天文基础 · 天体",
+   "description": "沿黄道一带运行、位置逐月移动的星体。肉眼能见的只有五颗，古人称五星或五纬；「行星」是后起的通名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "115",
+   "name": "星等",
+   "alternateName": "magnitude",
+   "termCode": "天文基础 · 星等",
+   "description": "表示天体明暗的等级，数越小者越亮。中国古代只记星之大小与颜色，此制明末随西学传入，《崇祯历书》的恒星表已用它分等。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "116",
+   "name": "视星等",
+   "alternateName": "apparent magnitude",
+   "termCode": "天文基础 · 星等",
+   "description": "从地上看去的亮度分级，未扣除远近的因素。肉眼刚能看见的星，约为六等。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "117",
+   "name": "绝对星等",
+   "alternateName": "absolute magnitude",
+   "termCode": "天文基础 · 星等",
+   "description": "设想把各星放在同一距离上比较所得的等级。视星等是「看上去多亮」，绝对星等是「本来多亮」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "118",
+   "name": "浑仪",
+   "alternateName": "armillary sphere",
+   "termCode": "律历制度 · 观测方法",
+   "description": "由若干同心圆环组成的测天仪器，用来量天体的入宿度与去极度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "119",
+   "name": "浑象",
+   "alternateName": "celestial globe",
+   "termCode": "律历制度 · 观测方法",
+   "description": "演示天球运转的仪器，球面上刻着星宿。浑仪是量天的，浑象是演天的。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "120",
+   "name": "圭表",
+   "alternateName": "gnomon and shadow-measurer",
+   "termCode": "律历制度 · 观测方法",
+   "description": "立表测影的器具，用来定冬至与回归年长度。影最长的那一天是冬至。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "121",
+   "name": "晷影",
+   "alternateName": "the shadow cast",
+   "termCode": "律历制度 · 观测方法",
+   "description": "表所投下的日影长度。冬至影最长、夏至影最短，由影长定二至，是定回归年的基础。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "122",
+   "name": "日晷",
+   "alternateName": "sundial",
+   "termCode": "律历制度 · 观测方法",
+   "description": "以晷针的影子在盘面上的方位指示时刻的器具。圭表算影的长短以定节气，日晷算影的方位以定时刻。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "123",
+   "name": "星官",
+   "alternateName": "star official",
+   "termCode": "星宿与星官 · 星官",
+   "description": "中国古代对星的划分单位：若干相邻的星编为一官，各给名称。与西洋星座相似而分法不同。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "124",
+   "name": "中官／五宫",
+   "alternateName": "the central palace / the five palaces",
+   "termCode": "星宿与星官 · 星官",
+   "description": "天区的划分法之一。《史记·天官书》分全天为中、东、南、西、北五宫，以中官为北极一带。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "125",
+   "name": "三垣二十八宿",
+   "alternateName": "the three enclosures and the twenty-eight mansions",
+   "termCode": "星宿与星官 · 三垣",
+   "description": "隋唐以后通行的全天划分体制：三垣统北天中央，二十八宿环布四周，全部星官都收得进去。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "126",
+   "name": "陈卓定纪",
+   "alternateName": "Chen Zhuo’s settlement",
+   "termCode": "星宿与星官 · 星官",
+   "description": "三国吴太史令陈卓合石氏、甘氏、巫咸三家星官，定为二百八十三官、一千四百六十四星，后世星图星表均以此为准。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "127",
+   "name": "星图",
+   "alternateName": "star chart",
+   "termCode": "星宿与星官 · 星官",
+   "description": "把星官按位置绘出的图。敦煌卷子中的唐代星图与苏州石刻天文图，是现存最重要的两件。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "128",
+   "name": "九野",
+   "alternateName": "the nine fields",
+   "termCode": "星宿与星官 · 星官",
+   "description": "《吕氏春秋·有始览》把天分为中央与八方共九野，各配若干星宿，是二十八宿之外的一种天区划分。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "129",
+   "name": "禽星",
+   "alternateName": "animal star",
+   "termCode": "星宿与星官 · 星官",
+   "description": "二十八宿与七曜、动物相配而成的一套名目，多用于术数。它由星宿体系派生，与历法推算无关。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "130",
+   "name": "灵台",
+   "alternateName": "the numinous observatory",
+   "termCode": "律历制度 · 观测方法",
+   "description": "中国古代的天文台。周代把观测天象、奉神占星的场所称为灵台；汉代有灵台，属太史。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-7"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "131",
+   "name": "改历",
+   "alternateName": "calendar reform",
+   "termCode": "律历制度 · 制度",
+   "description": "废止旧历、颁行新历。中国历代改历约百次，原因或为误差累积，或为改朝换代更定正朔。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "132",
+   "name": "颁历",
+   "alternateName": "promulgating the calendar",
+   "termCode": "律历制度 · 制度",
+   "description": "每年由朝廷造历、颁行天下。历书官造官颁，私造历书历来在禁。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "133",
+   "name": "私历",
+   "alternateName": "private almanac",
+   "termCode": "律历制度 · 制度",
+   "description": "非官颁的历书。历代多立禁条，然民间的通书、黄历仍辗转流传。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "134",
+   "name": "历禁",
+   "alternateName": "the ban on calendars",
+   "termCode": "律历制度 · 制度",
+   "description": "禁止私造、私售历书的法令。唐、宋、明、清的律中皆有相应条文。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "135",
+   "name": "农历（夏历）",
+   "alternateName": "the agricultural calendar (Xia calendar)",
+   "termCode": "历法术语 · 历代历法",
+   "description": "现行阴阳合历的通行叫法。它实为《时宪历》一系，因用夏正、服务于农时，后世通称农历——「农历」之名其实出现很晚。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "136",
+   "name": "黄历／通书",
+   "alternateName": "the popular almanac",
+   "termCode": "律历制度 · 文献",
+   "description": "民间日用的历书，逐日载宜忌、吉凶、神煞。由官历派生，明清流布极广。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "137",
+   "name": "时宪书",
+   "alternateName": "the Shixian almanac",
+   "termCode": "历法术语 · 历代历法",
+   "description": "清代官颁历书的名目，自《时宪历》而来。辛亥革命后仍行，至民国改行公历为止。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "138",
+   "name": "正史历志",
+   "alternateName": "the calendrical chapters of the standard histories",
+   "termCode": "律历制度 · 文献",
+   "description": "历代正史中记历法的专篇，是研究古历的第一手材料。名目不一，或名律历志、历志、历象志、时宪志。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "139",
+   "name": "太史令",
+   "alternateName": "the Grand Astrologer",
+   "termCode": "律历制度 · 官职",
+   "description": "秦汉以来掌天时星历的官，属太常，岁终奏新年历。后世名目与隶属屡变：唐宋有太史局、司天监，明清归钦天监。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "140",
+   "name": "司天监",
+   "alternateName": "the Astrological Observatory",
+   "termCode": "律历制度 · 官职",
+   "description": "唐宋金元掌天文、历法与占候的官署。唐称司天台，宋、金、元称司天监；明初一度沿置，洪武三年改称钦天监。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "141",
+   "name": "钦天监",
+   "alternateName": "the Imperial Observatory",
+   "termCode": "律历制度 · 官职",
+   "description": "明清两代掌观象、造历、颁历的官署。明洪武三年由司天监改设，清沿置，设监正、监副。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "142",
+   "name": "畴人",
+   "alternateName": "the hereditary calendrical astronomer",
+   "termCode": "律历制度 · 官职",
+   "description": "指世代相传、专司历算的人。语出《史记·历书》「畴人子弟分散」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "143",
+   "name": "保章氏",
+   "alternateName": "the Office of the Starry Signs",
+   "termCode": "律历制度 · 官职",
+   "description": "《周礼·春官》所载之官，掌天星，记日月星辰的变动。是文献里最早的天文之官之一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "144",
+   "name": "冯相氏",
+   "alternateName": "the Office of the Heavenly Order",
+   "termCode": "律历制度 · 官职",
+   "description": "《周礼·春官》所载之官，掌十二岁、十二月、十二辰一类天文次序。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-8"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "145",
+   "name": "五星／五纬",
+   "alternateName": "the five planets",
+   "termCode": "天文基础 · 天体",
+   "description": "岁星、荧惑、镇星、太白、辰星五颗行星的合称，古又称五纬。五星各有行度，历代历法多设专篇，推其入宿度与去极度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "146",
+   "name": "岁星",
+   "alternateName": "the Year Star (Jupiter)",
+   "termCode": "天文基础 · 天体",
+   "description": "古人对木星的称呼。约十二年行一周天，一年走一个星次，因而用来纪年。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "147",
+   "name": "荧惑",
+   "alternateName": "the Shimmering Deceiver (Mars)",
+   "termCode": "天文基础 · 天体",
+   "description": "古人对火星的称呼。荧荧似火，而行度在五星中最不定，顺逆疾徐无常，故名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "148",
+   "name": "太白",
+   "alternateName": "the Great White (Venus)",
+   "termCode": "天文基础 · 天体",
+   "description": "古人对金星的称呼。五星之中其光最盛：晨见于东方叫启明，昏见于西方叫长庚。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "149",
+   "name": "辰星",
+   "alternateName": "the Chronal Star (Mercury)",
+   "termCode": "天文基础 · 天体",
+   "description": "古人对水星的称呼。距日最近，一年中多半隐在日光里，可见的时候不多。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "150",
+   "name": "镇星／填星",
+   "alternateName": "the Garrison Star (Saturn)",
+   "termCode": "天文基础 · 天体",
+   "description": "古人对土星的称呼。约二十八年行一周天，一年镇守一个星宿，故名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "151",
+   "name": "合",
+   "alternateName": "conjunction",
+   "termCode": "天象类 · 行星天象",
+   "description": "行星与太阳黄经相同，叫合日；两颗行星黄经相同，也叫合。与日相合则伏而不见。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "152",
+   "name": "冲",
+   "alternateName": "opposition",
+   "termCode": "天象类 · 行星天象",
+   "description": "行星与太阳黄经相差一百八十度。日在西而星在东，日落时星自东方升起，终夜可见。外行星才有此象。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "153",
+   "name": "留",
+   "alternateName": "stationary point",
+   "termCode": "天象类 · 行星天象",
+   "description": "行星由顺行转逆行、或由逆行转顺行时，在天球上暂时停留不动的现象。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "154",
+   "name": "逆行",
+   "alternateName": "retrogradation",
+   "termCode": "天象类 · 行星天象",
+   "description": "行星自东向西的视运动。自西向东叫顺行，回头向西叫逆行，二者交替，周而复始。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "155",
+   "name": "伏",
+   "alternateName": "disappearance in the sun’s light",
+   "termCode": "天象类 · 行星天象",
+   "description": "行星行至与日相近，隐于日光中不见，谓之伏。伏后复见，叫「见」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "156",
+   "name": "犯",
+   "alternateName": "encroachment",
+   "termCode": "天象类 · 行星天象",
+   "description": "五星或月行至某星近旁、侵入其界内，史志称「犯」。正史天文志里这类记事最多。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "157",
+   "name": "守",
+   "alternateName": "prolonged stay",
+   "termCode": "天象类 · 行星天象",
+   "description": "五星行至某星官之内，久留不去，史志称「守」。与「犯」同为记五星行度的常用语。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-9"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "158",
+   "name": "紫微垣",
+   "alternateName": "Purple Forbidden Enclosure",
+   "termCode": "星宿与星官 · 三垣",
+   "description": "「三垣」的中垣，位于北天中央，包括北天极附近的天区。《步天歌》里它名下的星官最多。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "159",
+   "name": "太微垣",
+   "alternateName": "Supreme Subtlety Enclosure",
+   "termCode": "星宿与星官 · 三垣",
+   "description": "「三垣」的上垣，在紫微垣与张宿、翼宿之间。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "160",
+   "name": "天市垣",
+   "alternateName": "Celestial Market Enclosure",
+   "termCode": "星宿与星官 · 三垣",
+   "description": "「三垣」的下垣，在紫微垣与心宿、尾宿之间。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "161",
+   "name": "北斗",
+   "alternateName": "the Big Dipper",
+   "termCode": "星宿与星官 · 星官",
+   "description": "大熊座中七颗较亮的星，即「北斗七星」；古人用它定方向、定季节。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "162",
+   "name": "北斗七星",
+   "alternateName": "the seven stars of the Big Dipper",
+   "termCode": "星宿与星官 · 星官",
+   "description": "「北斗」七星的名称，自斗口至斗柄依次为天枢、天璇、天玑、天权、玉衡、开阳、摇光；前四星合称斗魁（又称璇玑），后三星合称斗杓（又称斗柄、玉衡）。依拜耳命名依次为大熊座 α、β、γ、δ、ε、ζ、η；天枢、天璇连线延长五倍指向北极星，故又称指极星。宗教与术数文献里另有一套称谓：贪狼、巨门、禄存、文曲、廉贞、武曲、破军。与「北斗」条同指。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "163",
+   "name": "北极星",
+   "alternateName": "the pole star",
+   "termCode": "天文基础 · 天体",
+   "description": "小熊座 α，是当前全天最靠近北天极的星。它与北天极的角距在公元 2100 年前后最小，约 28 角分。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "164",
+   "name": "天极",
+   "alternateName": "the celestial pole",
+   "termCode": "天文基础 · 坐标",
+   "description": "过天球中心、与地球自转轴平行的直线与天球相交的两点，即北天极与南天极。它不是一个星，是一个点。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "165",
+   "name": "拱极星",
+   "alternateName": "circumpolar star",
+   "termCode": "天文基础 · 坐标",
+   "description": "赤纬绝对值大于八十度的恒星，即绕天极转而不落的那一圈星。文献里有时也泛指低纬度可见其下中天的星。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-10"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "166",
+   "name": "苍龙",
+   "alternateName": "Azure Dragon",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "四象之一，由角、亢、氐、房、心、尾、箕七宿组成。五行配五方，东方为青，故名。也写作「青龙」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "167",
+   "name": "角宿",
+   "alternateName": "Horn",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第一宿，属东方苍龙。距星为角宿一（室女座 α）。《步天歌》载此宿有星官十一、星四十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "168",
+   "name": "亢宿",
+   "alternateName": "Neck",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二宿，属东方苍龙。距星为亢宿一（室女座 κ）。《步天歌》载此宿有星官七、星二十二。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "169",
+   "name": "氐宿",
+   "alternateName": "Root",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第三宿，属东方苍龙。距星为氐宿一（天秤座 α）。《步天歌》载此宿有星官十一、星五十四。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "170",
+   "name": "房宿",
+   "alternateName": "Room",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第四宿，属东方苍龙。距星为房宿一（天蝎座 π）。《步天歌》载此宿有星官七、星二十一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "171",
+   "name": "心宿",
+   "alternateName": "Heart",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第五宿，属东方苍龙。距星为心宿一（天蝎座 σ）。此宿第二星即大火。《步天歌》载此宿有星官二、星十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "172",
+   "name": "尾宿",
+   "alternateName": "Tail",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第六宿，属东方苍龙。距星为尾宿一（天蝎座 μ¹）。《步天歌》载此宿有星官五、星二十一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "173",
+   "name": "箕宿",
+   "alternateName": "Winnowing-basket",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第七宿，属东方苍龙。距星为箕宿一（人马座 γ）。《步天歌》载此宿有星官三、星八。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "174",
+   "name": "玄武",
+   "alternateName": "Dark Warrior",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "四象之一，由斗、牛、女、虚、危、室、壁七宿组成。五行配五方，北方为黑，故名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "175",
+   "name": "斗宿",
+   "alternateName": "Dipper",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第八宿，属北方玄武。距星为斗宿一（人马座 φ）。因与北斗相别，又称南斗。《步天歌》载此宿有星官十、星六十二。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "176",
+   "name": "牛宿",
+   "alternateName": "Ox",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第九宿，属北方玄武。距星为牛宿一（摩羯座 β）。《步天歌》载此宿有星官十一、星六十四。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "177",
+   "name": "女宿",
+   "alternateName": "Girl",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十宿，属北方玄武。距星为女宿一（宝瓶座 ε）。又名须女、婺女。《步天歌》载此宿有星官八、星五十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "178",
+   "name": "虚宿",
+   "alternateName": "Void",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十一宿，属北方玄武。距星为虚宿一（宝瓶座 β）。《步天歌》载此宿有星官十、星三十四。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "179",
+   "name": "危宿",
+   "alternateName": "Rooftop",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十二宿，属北方玄武。距星为危宿一（宝瓶座 α）。《步天歌》载此宿有星官十、星五十六。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "180",
+   "name": "室宿",
+   "alternateName": "Encampment",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十三宿，属北方玄武。距星为室宿一（飞马座 α）。又名营室。《步天歌》载此宿有星官十、星一百零九。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "181",
+   "name": "壁宿",
+   "alternateName": "Wall",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十四宿，属北方玄武。距星为壁宿一（飞马座 γ）。又名东壁。《步天歌》载此宿有星官六、星二十八。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "182",
+   "name": "白虎",
+   "alternateName": "White Tiger",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "四象之一，由奎、娄、胃、昴、毕、觜、参七宿组成。五行配五方，西方为白，故名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "183",
+   "name": "奎宿",
+   "alternateName": "Legs",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十五宿，属西方白虎。距星为奎宿一（仙女座 η）；《崇祯历书》以前的距星为奎宿二。《步天歌》载此宿有星官九、星四十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "184",
+   "name": "娄宿",
+   "alternateName": "Bond",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十六宿，属西方白虎。距星为娄宿一（白羊座 β）。《步天歌》载此宿有星官六、星三十三。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "185",
+   "name": "胃宿",
+   "alternateName": "Stomach",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十七宿，属西方白虎。距星为胃宿一（白羊座 35）。《步天歌》载此宿有星官七、星三十九。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "186",
+   "name": "昴宿",
+   "alternateName": "Pliades",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十八宿，属西方白虎。距星为昴宿一（金牛座 17）。此宿即昴星团，肉眼可见六七颗。英文名照录术语在线「昴宿」条（海峡两岸天文学名词，2013）：该库作 Pliades；同库「昴星团」条（天文学名词，2024，术语编码 08.641）作 Pleiades，通行拼法亦同。《步天歌》载此宿有星官九、星四十七。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "187",
+   "name": "毕宿",
+   "alternateName": "Net",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第十九宿，属西方白虎。距星为毕宿一（金牛座 ε）。《步天歌》载此宿有星官十四、星九十二。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "188",
+   "name": "觜宿",
+   "alternateName": "Mouth",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十宿，属西方白虎。距星为觜宿一（猎户座 λ）；《崇祯历书》以前的距星为觜宿二。《步天歌》载此宿有星官三、星十六。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "189",
+   "name": "参宿",
+   "alternateName": "Triads",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十一宿，属西方白虎。距星为参宿一（猎户座 ζ）；清乾隆十七年改定，此前用参宿三。《步天歌》载此宿有星官六、星二十五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "190",
+   "name": "朱雀",
+   "alternateName": "Vermilion Bird",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "四象之一，由井、鬼、柳、星、张、翼、轸七宿组成。五行配五方，南方为赤，故名。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "191",
+   "name": "井宿",
+   "alternateName": "Well",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十二宿，属南方朱雀。距星为井宿一（双子座 μ）。又名东井。《步天歌》载此宿有星官十九、星七十，是二十八宿中星官最多的一宿。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "192",
+   "name": "鬼宿",
+   "alternateName": "Ghost",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十三宿，属南方朱雀。距星为鬼宿一（巨蟹座 θ）。又名舆鬼。《步天歌》载此宿有星官七、星二十九。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "193",
+   "name": "柳宿",
+   "alternateName": "Willow",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十四宿，属南方朱雀。距星为柳宿一（长蛇座 δ）。又名咮。《步天歌》载此宿有星官二、星十一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "194",
+   "name": "星宿",
+   "alternateName": "Seven Stars",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十五宿，属南方朱雀。距星为星宿一（长蛇座 α）。原名七星。《步天歌》载此宿有星官五、星三十六。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "195",
+   "name": "张宿",
+   "alternateName": "Extension",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十六宿，属南方朱雀。距星为张宿一（长蛇座 υ¹）。《步天歌》载此宿有星官二、星二十。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "196",
+   "name": "翼宿",
+   "alternateName": "Wings",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十七宿，属南方朱雀。距星为翼宿一（巨爵座 α）。《步天歌》载此宿有星官二、星二十七。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "197",
+   "name": "轸宿",
+   "alternateName": "Chariot Platform",
+   "termCode": "星宿与星官 · 二十八宿",
+   "description": "二十八宿的第二十八宿，属南方朱雀。距星为轸宿一（乌鸦座 γ）。《步天歌》载此宿有星官五、星五十二。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-11"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "198",
+   "name": "浑天说",
+   "alternateName": "the theory of sphere-heavens",
+   "termCode": "天文基础 · 宇宙论",
+   "description": "始于战国的一种以地为中心的有限宇宙体系之说：天浑圆如弹丸，日月星辰附在天球上运行，地悬在空中、浮于气内，像蛋黄裹在蛋壳里。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "199",
+   "name": "盖天说",
+   "alternateName": "the heavenly-cover cosmology",
+   "termCode": "天文基础 · 宇宙论",
+   "description": "中国最早的宇宙结构之说：天像一口盖着的碗或一顶斗笠，地像一个倒扣的盘子，天在地之上、日月星辰随天而转。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "200",
+   "name": "宣夜说",
+   "alternateName": "the theory of an infinite universe",
+   "termCode": "天文基础 · 宇宙论",
+   "description": "主张天没有形质、没有边界，日月众星各自浮在虚空之中、凭气而动。与浑天、盖天同为古代三家宇宙之说。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "201",
+   "name": "天球",
+   "alternateName": "the celestial sphere",
+   "termCode": "天文基础 · 宇宙论",
+   "description": "为确定天体的位置和运动，设想把地球包在里面、与地球同心的一层假想圆球。天极、赤道、黄道都是这层球面上的圈与点。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "202",
+   "name": "大火",
+   "alternateName": "Da Huo",
+   "termCode": "天文基础 · 天体",
+   "description": "心宿二，天蝎座 α。《诗经》「七月流火」的「火」即指它。古人以它黄昏时西沉的早晚定夏去秋来，是上古最重要的授时星之一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "203",
+   "name": "银河",
+   "alternateName": "the Milky Way",
+   "termCode": "天象类 · 特殊天象",
+   "description": "晴天夜里可见的一条横过星空的乳白色亮带，古人以为它是天上的一条河，因而又叫天河。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "204",
+   "name": "《步天歌》",
+   "alternateName": "the Butian Ge",
+   "termCode": "律历制度 · 文献",
+   "description": "以七言歌诀分述三垣二十八宿全部星官的歌辞，相传为隋丹元子所作。后世认星、绘星图多以它为纲，也是星官数统计的主要依据之一。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "205",
+   "name": "《石氏星经》",
+   "alternateName": "the Star Classic of Master Shi",
+   "termCode": "律历制度 · 文献",
+   "description": "战国魏人石申所著星表，原书已佚，其内容因《开元占经》的引用而部分留存，含二十八宿距星与一百二十余颗恒星的赤道坐标。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "206",
+   "name": "观象台",
+   "alternateName": "the astronomical observatory",
+   "termCode": "律历制度 · 观测方法",
+   "description": "明清两代观测天象的台址，北京古观象台即其一。台上置浑仪、简仪、天体仪等，与钦天监的造历相表里。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-12"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "207",
+   "name": "新月",
+   "alternateName": "new moon",
+   "termCode": "天象类 · 月相",
+   "description": "「朔」的今名：日月黄经相同、月面不可见的时刻，今称新月。见「朔」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "208",
+   "name": "蛾眉月",
+   "alternateName": "waxing crescent",
+   "termCode": "天象类 · 月相",
+   "description": "朔后初见于西方天空的月牙，状如蛾眉，日落后可见。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "209",
+   "name": "上弦月",
+   "alternateName": "first quarter",
+   "termCode": "天象类 · 月相",
+   "description": "「上弦」的今名：月亮位于太阳以东九十度，日落时正当中天，西半边明亮。见「上弦／下弦」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "210",
+   "name": "盈凸月",
+   "alternateName": "waxing gibbous",
+   "termCode": "天象类 · 月相",
+   "description": "上弦到望之间的月相，被照亮的部分大于半个，逐夜变圆。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "211",
+   "name": "满月",
+   "alternateName": "full moon",
+   "termCode": "天象类 · 月相",
+   "description": "「望」的今名：月亮与太阳黄经相差一百八十度，日落时东升、日出时西落。见「望」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "212",
+   "name": "亏凸月",
+   "alternateName": "waning gibbous",
+   "termCode": "天象类 · 月相",
+   "description": "望到下弦之间的月相，被照亮的部分大于半个，逐夜变缺。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "213",
+   "name": "下弦月",
+   "alternateName": "last quarter",
+   "termCode": "天象类 · 月相",
+   "description": "「下弦」的今名：月亮位于太阳以西九十度，日出时正当中天，东半边明亮。见「上弦／下弦」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "214",
+   "name": "残月",
+   "alternateName": "waning crescent",
+   "termCode": "天象类 · 月相",
+   "description": "下弦之后到朔之前的月牙，黎明前见于东方。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "215",
+   "name": "月龄",
+   "alternateName": "moon’s age",
+   "termCode": "天象类 · 月相",
+   "description": "自朔起算的日数，朔日为零。本站历日页「月相月龄」即指此。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-13"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "216",
+   "name": "回归年",
+   "alternateName": "tropical year",
+   "termCode": "天文基础 · 时间系统",
+   "description": "「岁实」的今名：太阳连续两次过春分点所历的时间，约 365.2422 日。见「岁实」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "217",
+   "name": "恒星年",
+   "alternateName": "sidereal year",
+   "termCode": "天文基础 · 时间系统",
+   "description": "「岁周」的今名：太阳连续两次回到同一颗恒星所历的时间，约 365.2564 日，比回归年略长。见「岁周」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "218",
+   "name": "近点年",
+   "alternateName": "anomalistic year",
+   "termCode": "天文基础 · 时间系统",
+   "description": "地球连续两次过近日点所历的时间，约 365.2596 日。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "219",
+   "name": "朔望月",
+   "alternateName": "synodic month",
+   "termCode": "天文基础 · 时间系统",
+   "description": "「朔策」的今名：月相圆缺一轮所历的时间，约 29.5306 日。见「朔策」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "220",
+   "name": "恒星月",
+   "alternateName": "sidereal month",
+   "termCode": "天文基础 · 时间系统",
+   "description": "月球连续两次回到同一颗恒星所历的时间，约 27.3217 日，比朔望月短。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "221",
+   "name": "近点月",
+   "alternateName": "anomalistic month",
+   "termCode": "天文基础 · 时间系统",
+   "description": "月球连续两次过近地点所历的时间，约 27.5546 日。月行迟疾的周期即以此为准，见「入转」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "222",
+   "name": "交点月",
+   "alternateName": "nodical month",
+   "termCode": "天文基础 · 时间系统",
+   "description": "月球连续两次过同一黄白交点所历的时间，约 27.2122 日。交食是否发生，要看它落在何处。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "223",
+   "name": "太阳日",
+   "alternateName": "solar day",
+   "termCode": "天文基础 · 时间系统",
+   "description": "太阳连续两次过同一子午线所历的时间，平太阳日定为二十四小时。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "224",
+   "name": "恒星日",
+   "alternateName": "sidereal day",
+   "termCode": "天文基础 · 时间系统",
+   "description": "恒星连续两次过同一子午线所历的时间，平恒星日约二十三时五十六分四秒，比太阳日短约四分钟。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "225",
+   "name": "真太阳时",
+   "alternateName": "apparent solar time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "以真太阳的时角计的时间，日晷所指示的就是它。它走得不均匀。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "226",
+   "name": "平太阳时",
+   "alternateName": "mean solar time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "以假想的匀行太阳计的时间，钟表所走的即是这一种。它与真太阳时之差称均时差。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "227",
+   "name": "北京时间",
+   "alternateName": "Beijing time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "东经一百二十度的平太阳时，即东八区区时，不是北京当地的太阳时。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "228",
+   "name": "世界时",
+   "alternateName": "universal time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "本初子午线（格林尼治）的平太阳时，是星历与天文年表常用的时间尺度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "229",
+   "name": "恒星时",
+   "alternateName": "sidereal time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "以春分点的时角计的时间，一个恒星日约为二十三时五十六分四秒。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "230",
+   "name": "均时差",
+   "alternateName": "equation of time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "真太阳时与平太阳时之差，一年之中在正负十六分之间往复，是换算出生时辰时必须考虑的一项。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-14"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "231",
+   "name": "夜半",
+   "alternateName": "midnight",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，子时，今二十三时至一时，一夜的中点。又名子夜、子半。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "232",
+   "name": "鸡鸣",
+   "alternateName": "cock-crow",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，丑时，今一时至三时。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "233",
+   "name": "平旦",
+   "alternateName": "daybreak",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，寅时，今三时至五时，是夜与日交替之际。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "234",
+   "name": "日出",
+   "alternateName": "sunrise",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，卯时，今五时至七时。也指太阳升出地平线的时刻。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "235",
+   "name": "食时",
+   "alternateName": "breakfast time",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，辰时，今七时至九时，古人吃早饭的时候。与交食所说的时长不是一回事。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "236",
+   "name": "隅中",
+   "alternateName": "late morning",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，巳时，今九时至十一时，临近中午。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "237",
+   "name": "日中",
+   "alternateName": "noon",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，午时，今十一时至十三时，太阳过中天之时。也指昼夜均分的春分与秋分，《尚书·尧典》「日中星鸟」即用后一义。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "238",
+   "name": "日昳",
+   "alternateName": "early afternoon",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，未时，今十三时至十五时，日头开始偏西。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "239",
+   "name": "晡时",
+   "alternateName": "late afternoon",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，申时，今十五时至十七时，古人吃第二顿饭的时候，又名夕食。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "240",
+   "name": "日入",
+   "alternateName": "sunset",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，酉时，今十七时至十九时。也指太阳没入地平线的时刻，与「日出」相对。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "241",
+   "name": "黄昏",
+   "alternateName": "dusk",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，戌时，今十九时至二十一时。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "242",
+   "name": "人定",
+   "alternateName": "night’s rest",
+   "termCode": "天文基础 · 时间系统",
+   "description": "十二时称之一，亥时，今二十一时至二十三时，夜已深而人将息。十二时称至此而一周。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-15"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "243",
+   "name": "天赤道",
+   "alternateName": "celestial equator",
+   "termCode": "天文基础 · 坐标",
+   "description": "地球赤道面延伸到天球上所截的大圆，即「赤道」在天文上的本义；冠一「天」字，用以区别于地球赤道。见「赤道」条。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "244",
+   "name": "赤经",
+   "alternateName": "right ascension",
+   "termCode": "天文基础 · 坐标",
+   "description": "自春分点起沿天赤道向东量至天体所在时圈的角距。它与赤纬合起来定一颗星的位置；中国古代不用它，而用入宿度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "245",
+   "name": "赤纬",
+   "alternateName": "declination",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体沿时圈量至天赤道的角距，在天赤道以北者为正。中国古代与之相当的是去极度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "246",
+   "name": "黄纬",
+   "alternateName": "ecliptic latitude",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体沿黄经圈量至黄道的角距。它与黄经合起来，就是黄道坐标。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "247",
+   "name": "黄极",
+   "alternateName": "ecliptic pole",
+   "termCode": "天文基础 · 坐标",
+   "description": "黄道的两个极点，即过天球中心垂直于黄道面的直线与天球相交的两点，距天极约二十三度半。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "248",
+   "name": "赤极",
+   "alternateName": "pole of the equator",
+   "termCode": "天文基础 · 坐标",
+   "description": "天赤道的两个极点，也就是地球自转轴与天球相交的两点，与「天极」同指。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "249",
+   "name": "中天",
+   "alternateName": "culmination",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体过观测者子午圈的时刻或位置。过天顶那一侧的称上中天，过另一侧的称下中天。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "250",
+   "name": "天顶",
+   "alternateName": "zenith",
+   "termCode": "天文基础 · 坐标",
+   "description": "观测者头顶正上方、铅垂线向上与天球相交的一点，其地平高度为九十度。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "251",
+   "name": "地平高度",
+   "alternateName": "altitude",
+   "termCode": "天文基础 · 坐标",
+   "description": "天体沿地平经圈量至地平的角距，又名地平纬度。它与方位角合起来，就是地平坐标。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-16"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "252",
+   "name": "彗星",
+   "alternateName": "comet",
+   "termCode": "天象类 · 特殊天象",
+   "description": "拖着长尾、沿扁长轨道运行的天体，古称扫帚星。马王堆汉墓出土帛书上的彗星图，是现存最早的彗星形态图。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "253",
+   "name": "孛星",
+   "alternateName": "deluding star",
+   "termCode": "天象类 · 特殊天象",
+   "description": "古代天文志中与彗星并列的一类天体，以其光芒四出而得名。历代多与彗星同记。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "254",
+   "name": "客星",
+   "alternateName": "guest star",
+   "termCode": "天象类 · 特殊天象",
+   "description": "突然出现于星官之间、历时不久又隐没的星。史书所记至和元年（1054 年）天关客星，今多认为是一次超新星爆发的记录。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "255",
+   "name": "流星",
+   "alternateName": "meteor",
+   "termCode": "天象类 · 特殊天象",
+   "description": "夜里划过天空、瞬息即灭的亮线，是尘粒进入大气后燃烧的痕迹。成批出现的称流星雨。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "256",
+   "name": "陨石",
+   "alternateName": "meteorite",
+   "termCode": "天象类 · 特殊天象",
+   "description": "落到地面的流星体残块。历代史书多记为「星陨如雨」或「陨石于某地」。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "257",
+   "name": "日珥",
+   "alternateName": "solar prominence",
+   "termCode": "天象类 · 特殊天象",
+   "description": "从太阳边缘喷出的火焰状气体，日全食时肉眼可见。甲骨卜辞里的「三焰」曾被释为日珥，此事学界尚有争论。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "258",
+   "name": "黑子",
+   "alternateName": "sunspot",
+   "termCode": "天象类 · 特殊天象",
+   "description": "太阳光球上的暗斑。中国古代观测记录甚多，《汉书·五行志》河平元年（前 28 年）一条尤常被称引。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-17"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "259",
+   "name": "简仪",
+   "alternateName": "abridged armilla",
+   "termCode": "律历制度 · 观测方法",
+   "description": "元郭守敬创制的测天仪器。它把浑仪拆成赤道装置与地平装置两组，免去多环交叠、遮住视线的毛病。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "260",
+   "name": "仰仪",
+   "alternateName": "upward-looking bowl sundial",
+   "termCode": "律历制度 · 观测方法",
+   "description": "元郭守敬创制的仪器。铜制半球仰置，内壁刻坐标，借中心针影读取太阳的位置与时刻。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "261",
+   "name": "水运仪象台",
+   "alternateName": "water-driven astronomical clock tower",
+   "termCode": "律历制度 · 观测方法",
+   "description": "北宋元祐年间苏颂、韩公廉等造成，以水力驱动，把浑仪、浑象与报时装置合于一台。《新仪象法要》即为此台而作。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "262",
+   "name": "漏壶",
+   "alternateName": "drip vessel",
+   "termCode": "律历制度 · 观测方法",
+   "description": "以壶盛水、水渐下漏、看箭上刻度计时的器具。一昼夜分一百刻，即由它量出。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "263",
+   "name": "土圭",
+   "alternateName": "gnomon shadow template",
+   "termCode": "律历制度 · 观测方法",
+   "description": "《周礼·考工记》所记的测影之器，以日影的长短定日至、以影的方位定方向。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "264",
+   "name": "圭尺",
+   "alternateName": "the graduated rule of the gnomon",
+   "termCode": "律历制度 · 观测方法",
+   "description": "圭表上量取影长的刻度尺。山西襄汾陶寺遗址一座大墓出土带刻度的漆杆，研究者多认为是圭尺一类。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "265",
+   "name": "测影",
+   "alternateName": "shadow measurement",
+   "termCode": "律历制度 · 观测方法",
+   "description": "立表测影，以影长与影的方位定日至、定方向、定时刻，是中国古代最基本的天文测量手段。《周礼·考工记》记有以圆规取日出、日入影端之法。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-18"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "266",
+   "name": "建除十二神",
+   "alternateName": "the twelve day-officers",
+   "termCode": "术数择日 · 择日",
+   "description": "旧历书系于每日之下的十二个名目：建、除、满、平、定、执、破、危、成、收、开、闭。以月建之日为「建」，逐日顺行十二辰。其体例见《协纪辨方书》卷四。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "267",
+   "name": "黄黑道十二神",
+   "alternateName": "the twelve deities of the yellow and black paths",
+   "termCode": "术数择日 · 择日",
+   "description": "旧历注以日支定「青龙」所临之辰，逐辰顺行，得十二神：青龙、明堂、天刑、朱雀、金匮、天德、白虎、玉堂、天牢、玄武、司命、勾陈。前六称黄道，后六称黑道。见《协纪辨方书》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "268",
+   "name": "六曜",
+   "alternateName": "the six luminaries",
+   "termCode": "术数择日 · 择日",
+   "description": "旧历注中的六个名目：先胜、友引、先负、佛灭、大安、赤口。以农历月、日相加取六而起。源出古代历注。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "269",
+   "name": "冲煞",
+   "alternateName": "clash and the inauspicious direction",
+   "termCode": "术数择日 · 择日",
+   "description": "旧历书于日下标注的两项：一为日支与所用之年支、月支相冲（子午、丑未、寅申、卯酉、辰戌、巳亥，共六冲）；一为按三合局所定的煞方（申子辰煞南、寅午戌煞北、巳酉丑煞东、亥卯未煞西）。与行星的「冲」不是一回事。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "270",
+   "name": "宜忌",
+   "alternateName": "recommended and avoided activities",
+   "termCode": "术数择日 · 择日",
+   "description": "旧历书于每日之下分列「宜」「忌」两栏事项的体例，所据为建除、宿直等旧说。见《协纪辨方书》卷三十一月表体例。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "271",
+   "name": "神煞",
+   "alternateName": "day deities and omens",
+   "termCode": "术数择日 · 神煞",
+   "description": "旧历书附注于日下的一类名目，如天赦、月德、天德、四离、四绝、月破、岁破等，各按年月日的干支配合而起。名目与起例散见《协纪辨方书》卷三、卷五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "272",
+   "name": "天赦",
+   "alternateName": "Heavenly Pardon",
+   "termCode": "术数择日 · 神煞",
+   "description": "旧历书所谓「四季天赦日」：春戊寅、夏甲午、秋戊申、冬甲子。见《协纪辨方书》卷五引《天宝历》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "273",
+   "name": "月德",
+   "alternateName": "Lunar Virtue",
+   "termCode": "术数择日 · 神煞",
+   "description": "按月建与日干配合而定：寅午戌月见丙、申子辰月见壬、亥卯未月见甲、巳酉丑月见庚。见《协纪辨方书》卷五。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "274",
+   "name": "天德",
+   "alternateName": "Heavenly Virtue",
+   "termCode": "术数择日 · 神煞",
+   "description": "按月建与月内干支配合而定，十二月的配合各不相同。见《协纪辨方书》卷五引《堪舆经》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "275",
+   "name": "四离",
+   "alternateName": "the four partings",
+   "termCode": "术数择日 · 神煞",
+   "description": "二分二至的前一日，即春分、秋分、夏至、冬至各前一日。见《协纪辨方书》卷五引《玉门经》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "276",
+   "name": "四绝",
+   "alternateName": "the four severances",
+   "termCode": "术数择日 · 神煞",
+   "description": "四立的前一日，即立春、立夏、立秋、立冬各前一日。见《协纪辨方书》卷五引《玉门经》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "277",
+   "name": "月破",
+   "alternateName": "month breach",
+   "termCode": "术数择日 · 神煞",
+   "description": "日支与月建相冲之日。见《协纪辨方书》卷三。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "278",
+   "name": "岁破",
+   "alternateName": "year breach",
+   "termCode": "术数择日 · 神煞",
+   "description": "日支与年支相冲之日。见《协纪辨方书》卷三。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  },
+  {
+   "@type": "DefinedTerm",
+   "identifier": "279",
+   "name": "六十甲子纳音",
+   "alternateName": "the nayin of the sexagenary cycle",
+   "termCode": "术数择日 · 纳音",
+   "description": "把六十干支每两柱配一个五行名目，如甲子、乙丑为「海中金」，共三十项。见《协纪辨方书》卷三十一，亦见《三命通会》。",
+   "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"
+  }
+ ]
+}
