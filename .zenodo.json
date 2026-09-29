@@ -32,17 +32,17 @@
   "related_identifiers": [
     {
       "identifier": "https://github.com/Kuangchujia/chinese-calendar-dataset",
-      "relation": "isRelatedTo",
+      "relation": "issupplementto",
       "resource_type": "dataset"
     },
     {
       "identifier": "https://github.com/Kuangchujia/chinese-calendar-glossary",
-      "relation": "isIdenticalTo",
+      "relation": "isidenticalto",
       "resource_type": "dataset"
     },
     {
       "identifier": "https://kuangchujia.com",
-      "relation": "isDocumentedBy",
+      "relation": "isdocumentedby",
       "resource_type": "other"
     }
   ],
