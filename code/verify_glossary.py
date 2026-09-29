@@ -347,6 +347,43 @@ def main():
 
     print()
     print("=" * 68)
+    print("七 · 对外 DOI 口径（家规：每合集一个概念 DOI，对外只公布这一个）")
+    print("=" * 68)
+    # 家规出处：`规划与报告/海外发布规则·2026-09-20.md`
+    #   §一 L16（用户原话逐字照录）：「DOI 规则改为：每合集一个概念 DOI，对外只公布这一个。」
+    #   §二 L24 落点含「四仓 README」；§四 L62 记四仓 README 锚定块用的就是 concept DOI。
+    # 两号来源：Zenodo REST `GET /api/records/<版本号>` 的 `conceptdoi` / `doi` 两个字段。
+    #   concept = 合集级，永久指向最新版；version = 本版记录号，会停在旧版（「链式追尾」）。
+    # ⚠ 自指陷阱（实测踩过一次）：判据是「活件里出现该字符串」，
+    #   则**描述这条违规的修订记录行**会把自己抓住——本器因此判 FAIL 过一次。
+    #   正解不是给判据开豁免口，而是**正文不复写版本号**：只写「版本级记录号」，
+    #   该号归 git commit 信息与 Zenodo 版本列表。此处记一笔，免得日后又加回去。
+    CONCEPT_DOI = "10.5281/zenodo.23028692"
+    VERSION_DOI = "10.5281/zenodo.23028693"
+    LIVE = ["README.md", "README_AI_AGENT.md", "NOTICE.md", "CITATION.cff"]
+    ver_hits, con_hits = [], []
+    for fn in LIVE:
+        p = os.path.join(root, fn)
+        if not os.path.isfile(p):
+            continue
+        t = read_bytes(p).decode("utf-8-sig", errors="replace")
+        nv, nc = t.count(VERSION_DOI), t.count(CONCEPT_DOI)
+        if nv:
+            ver_hits.append((fn, nv))
+        if nc:
+            con_hits.append((fn, nc))
+    if ver_hits:
+        fail(f"活件出现版本 DOI {VERSION_DOI}：{ver_hits}"
+             f"（家规：对外只公布概念 DOI；版本号只进 git commit 信息）")
+    else:
+        ok("活件无版本 DOI 残留")
+    if not con_hits:
+        fail(f"活件未出现概念 DOI {CONCEPT_DOI}")
+    else:
+        ok(f"活件已用概念 DOI：{con_hits}")
+
+    print()
+    print("=" * 68)
     print(f"结果：OK {len(OKS)} ｜ WARN {len(WARNS)} ｜ FAIL {len(FAILS)}")
     print("=" * 68)
     for f in FAILS:

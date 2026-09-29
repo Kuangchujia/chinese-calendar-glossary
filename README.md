@@ -2,12 +2,12 @@
 
 <!-- badges -->
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23028693.svg)](https://doi.org/10.5281/zenodo.23028693) [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--7650--833X-a6ce39.svg)](https://orcid.org/0009-0002-7650-833X) [![OpenAlex](https://img.shields.io/badge/OpenAlex-A5151908354-ff6f00.svg)](https://openalex.org/A5151908354) [![Site](https://img.shields.io/badge/site-kuangchujia.com-blue.svg)](https://kuangchujia.com)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23028692.svg)](https://doi.org/10.5281/zenodo.23028692) [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--7650--833X-a6ce39.svg)](https://orcid.org/0009-0002-7650-833X) [![OpenAlex](https://img.shields.io/badge/OpenAlex-A5151908354-ff6f00.svg)](https://openalex.org/A5151908354) [![Site](https://img.shields.io/badge/site-kuangchujia.com-blue.svg)](https://kuangchujia.com)
 
 > **一套中英双语对照的中国历法与古天文学术语表，可下载、可引用、可核验。**
 > **279 条术语**，分 19 组；每条给**中文名 · 英文定译 · 中文释义 · 英文释义**四项，并标出与「术语在线」（全国科学技术名词审定委员会）的对应关系。
 > 附两张独立对照表：**二十八宿距星三源对照**（28 行）、**二十八宿星官与星数**（28 行）。
-> DOI：10.5281/zenodo.23028693 ｜ 许可 CC BY 4.0 ｜ 版本 v1.0.0
+> DOI：10.5281/zenodo.23028692 ｜ 许可 CC BY 4.0 ｜ 版本 v1.0.1
 > **机器可读版（面向 AI Agent 与 LLM 爬虫）**：[`README_AI_AGENT.md`](README_AI_AGENT.md) —— 同一批事实的结构化声明、字段表与自校验清单。
 
 <!-- ANCHOR-BLOCK-BEGIN -->
@@ -22,7 +22,7 @@
 | **OpenAlex Index** | [A5151908354](https://openalex.org/A5151908354) |
 | **个人主页 / 全部成果总入口（Verification Hub）** | <https://kuangchujia.com> |
 | **本仓库** | <https://github.com/Kuangchujia/chinese-calendar-glossary> |
-| **本数据集 DOI（Zenodo）** | [10.5281/zenodo.23028693](https://doi.org/10.5281/zenodo.23028693) |
+| **本数据集 DOI（Zenodo）** | [10.5281/zenodo.23028692](https://doi.org/10.5281/zenodo.23028692) |
 | **配套数据集（历法三件套）** | <https://github.com/Kuangchujia/chinese-calendar-dataset> |
 | **配套预印本镜像仓库** | <https://github.com/Kuangchujia/kuangchujia-preprints> |
 
@@ -223,7 +223,7 @@
 
 ## 六、权利与许可
 
-数据集 DOI：`10.5281/zenodo.23028693` ｜ 永久链接：<https://doi.org/10.5281/zenodo.23028693>
+数据集 DOI：`10.5281/zenodo.23028692` ｜ 永久链接：<https://doi.org/10.5281/zenodo.23028692>
 
 - 本数据集采用 **Creative Commons Attribution 4.0 International（CC BY 4.0）**。可自由使用、复制、修改、分发，含商业用途，**条件是署名**。
 - **许可文本**：完整法律文本见 [`LICENSE`](LICENSE)（CC BY 4.0 官方英文全文）；[`NOTICE.md`](NOTICE.md) 为中文对照说明，含本仓要求的署名格式。
@@ -234,7 +234,7 @@
 
 **署名格式（请照此引用）**：
 
-> 邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset]. Zenodo. 2026. v1.0.0. CC BY 4.0. DOI: 10.5281/zenodo.23028693
+> 邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset]. Zenodo. 2026. v1.0.1. CC BY 4.0. DOI: 10.5281/zenodo.23028692
 
 ---
 
@@ -300,4 +300,5 @@ python code/verify_glossary.py
 
 | 日期 | 版本 | 说明 |
 |:---|:---|:---|
-| 2026-09-29 | 1.0.0 | 首次发布：术语 279 条 / 19 组 / 25 个二级子类；中英逐条对表 279/279 一致（0 不符）；与术语在线对标 147 同名 / 21 近名 / 111 未收；附二十八宿距星三源对照 28 行、星官与星数 28 行；另出 schema.org `DefinedTermSet` 语义件。Zenodo DOI 10.5281/zenodo.23028693。源页修订时间 2026-09-26。分类表「术数择日」行源页重复计数已如实标注（表载 28 / 实测 14），并附源页自述与实测对拍表。**英文定译另作 5 处修订**（干支→stem-branch、六十甲子→sexagenary cycle 等），依源页自身英文释义本就用 stem-branch 这一内部不一致而统一，逐条留档于 verification_term_revisions.csv。生成、校验、许可三件齐备；校验器独立于生成器，OK 24 / WARN 2 / FAIL 0。 |
+| 2026-09-29 | 1.0.0 | 首次发布：术语 279 条 / 19 组 / 25 个二级子类；中英逐条对表 279/279 一致（0 不符）；与术语在线对标 147 同名 / 21 近名 / 111 未收；附二十八宿距星三源对照 28 行、星官与星数 28 行；另出 schema.org `DefinedTermSet` 语义件。Zenodo DOI 10.5281/zenodo.23028692。源页修订时间 2026-09-26。分类表「术数择日」行源页重复计数已如实标注（表载 28 / 实测 14），并附源页自述与实测对拍表。**英文定译另作 5 处修订**（干支→stem-branch、六十甲子→sexagenary cycle 等），依源页自身英文释义本就用 stem-branch 这一内部不一致而统一，逐条留档于 verification_term_revisions.csv。生成、校验、许可三件齐备；校验器独立于生成器，OK 24 / WARN 2 / FAIL 0。 |
+| 2026-09-29 | 1.0.1 | **对外 DOI 口径修正**。v1.0.0 的 README／CITATION.cff 对外公布的是**版本级记录号**（非概念号；依家规不复写于本 README），与《海外发布规则·2026-09-20》§一「每合集一个概念 DOI，对外只公布这一个」相抵——版本号会停在旧版（链式追尾）。本版统一改为**概念 DOI** `10.5281/zenodo.23028692`（合集级，永久指向最新版），版本号只进 git commit 信息。`README_AI_AGENT.md` 补概念 DOI 一行，对齐配套仓体例。校验器增第七组判据「对外 DOI 口径」2 项，故计数由 24 项升至 26 项；`.zenodo.json` 描述内原记 OK 17 / WARN 1（早期一轮旧值），一并订正为本版实测值。**数据件一字未动**：279 条 / 19 组 / 两附录 28×2 与 v1.0.0 完全相同。校验 OK 26 / WARN 2 / FAIL 0。 |

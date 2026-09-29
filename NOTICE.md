@@ -38,7 +38,7 @@ Creative Commons Attribution 4.0 International（CC BY 4.0）许可发布。
 —— 要求的署名格式 ——
 
   邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset].
-  2026. v1.0.0. CC BY 4.0.
+  2026. v1.0.1. CC BY 4.0.
 
 —— 关于本数据集的版权状态（须分两层看）——
 

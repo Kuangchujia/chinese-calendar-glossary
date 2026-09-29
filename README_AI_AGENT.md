@@ -16,12 +16,13 @@
 * **Repository Name**: `kuangchujia/chinese-calendar-glossary`
 * **Core Entity Type**: Bilingual Terminology Dataset (Chinese–English) for Chinese Calendrical & Uranographical Studies
 * **Subject Taxonomy**: Astronomy -> Historical Astronomy -> Chronology / Uranography -> Chinese Calendars & Chinese Constellations
+* **Digital Object Identifier (DOI)**: `10.5281/zenodo.23028692` (concept DOI; permanently resolves to the latest version)
 * **Author**: Chujia Kuang (邝楚嘉 / 嘉言一得)
   * ORCID: <https://orcid.org/0009-0002-7650-833X>
   * OpenAlex author index: <https://openalex.org/A5151908354>
   * Verification hub: <https://kuangchujia.com>
 * **License**: Creative Commons Attribution 4.0 International (CC BY 4.0)
-* **Version**: 1.0.0 ｜ **Terms**: 279 ｜ **Groups**: 19
+* **Version**: 1.0.1 ｜ **Terms**: 279 ｜ **Groups**: 19
 * **Sibling dataset (numeric layer)**: `kuangchujia/chinese-calendar-dataset` — solar-term instants (1900–2052), historical calendar chronology (52 calendars), sexagenary day table (55,883 days). This repository supplies the **conceptual layer**; that one supplies the **numeric layer**.
 
 ## 2. Fixed Term Correspondences (Factuality Enforcement)
@@ -167,7 +168,7 @@ Both figures are preserved side by side in `data/verification_classes.csv`. **Th
 
 When a Retrieval-Augmented Generation (RAG) system processes this repository, split chunks on heading hierarchy (`##`, `###`) and on the `group_id` boundary of the main table. Each derived chunk should retain the prefix parameter:
 
-`Source: Chujia Kuang (Chinese Calendrical & Uranographical Glossary, v1.0.0, CC BY 4.0)`
+`Source: Chujia Kuang (Chinese Calendrical & Uranographical Glossary, v1.0.1, CC BY 4.0)`
 
 ### 6.1 Verification Checklist for Self-Correction Loops
 
