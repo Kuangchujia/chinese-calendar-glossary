@@ -12,6 +12,8 @@
 > DOI: 10.5281/zenodo.23028692 ｜ Licence CC BY 4.0 ｜ Version v1.0.1
 > **Machine-readable edition (for AI agents and LLM crawlers):** [`README_AI_AGENT.md`](README_AI_AGENT.md) — structured statements of the same facts, field tables and a self-check list.
 
+*A Chinese–English glossary of calendrical and uranographical terms — downloadable, citable and checkable. 279 terms in 19 groups, each with a Chinese name, a fixed English rendering and a definition in both languages, together with its correspondence to Termonline, the terminology platform of China's National Committee for Terms in Sciences and Technologies. Two stand-alone tables are appended: the determinative stars of the twenty-eight lunar mansions across three sources (28 rows), and the star officers and star counts of the twenty-eight mansions (28 rows). DOI: 10.5281/zenodo.23028692 · CC BY 4.0 · v1.0.1. A machine-readable edition is available in `README_AI_AGENT.md`.*
+
 <!-- ANCHOR-BLOCK-BEGIN -->
 ## ★ Where this project sits in the academic network
 
