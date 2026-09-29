@@ -360,7 +360,7 @@ def main():
     #   该号归 git commit 信息与 Zenodo 版本列表。此处记一笔，免得日后又加回去。
     CONCEPT_DOI = "10.5281/zenodo.23028692"
     VERSION_DOI = "10.5281/zenodo.23028693"
-    LIVE = ["README.md", "README_AI_AGENT.md", "NOTICE.md", "CITATION.cff"]
+    LIVE = ["README.md", "README.zh.md", "README_AI_AGENT.md", "NOTICE.md", "CITATION.cff"]
     ver_hits, con_hits = [], []
     for fn in LIVE:
         p = os.path.join(root, fn)
