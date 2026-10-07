@@ -27,6 +27,7 @@
 | **ホームサイト／全成果への総合入口（Verification Hub）** | <https://kuangchujia.com> |
 | **本リポジトリ** | <https://github.com/Kuangchujia/chinese-calendar-glossary> |
 | **データセット DOI（Zenodo）** | [10.5281/zenodo.23028692](https://doi.org/10.5281/zenodo.23028692) |
+| **OSF プロジェクト（オープン研究ミラー）** | <https://osf.io/3sz95/> |
 | **姉妹データセット（暦法三部作）** | <https://github.com/Kuangchujia/chinese-calendar-dataset> |
 | **併設プレプリント・ミラーリポジトリ** | <https://github.com/Kuangchujia/kuangchujia-preprints> |
 
