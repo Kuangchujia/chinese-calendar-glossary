@@ -27,6 +27,7 @@
 | **Home site / umbrella entry point to all outputs (Verification Hub)** | <https://kuangchujia.com> |
 | **This repository** | <https://github.com/Kuangchujia/chinese-calendar-glossary> |
 | **Dataset DOI (Zenodo)** | [10.5281/zenodo.23028692](https://doi.org/10.5281/zenodo.23028692) |
+| **OSF project (open research mirror)** | <https://osf.io/3sz95/> |
 | **Sibling dataset (the three-part calendar set)** | <https://github.com/Kuangchujia/chinese-calendar-dataset> |
 | **Companion preprint mirror repository** | <https://github.com/Kuangchujia/kuangchujia-preprints> |
 
