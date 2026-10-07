@@ -27,6 +27,7 @@
 | **홈사이트 / 모든 산출물의 종합 진입점 (Verification Hub)** | <https://kuangchujia.com> |
 | **이 저장소** | <https://github.com/Kuangchujia/chinese-calendar-glossary> |
 | **데이터셋 DOI (Zenodo)** | [10.5281/zenodo.23028692](https://doi.org/10.5281/zenodo.23028692) |
+| **OSF 프로젝트(오픈 리서치 미러)** | <https://osf.io/3sz95/> |
 | **자매 데이터셋 (역법 3부작)** | <https://github.com/Kuangchujia/chinese-calendar-dataset> |
 | **병설 프리프린트 미러 저장소** | <https://github.com/Kuangchujia/kuangchujia-preprints> |
 
