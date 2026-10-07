@@ -26,38 +26,211 @@
   "subclasses_zh_page": 25
  },
  "english_revisions": {
-  "count": 5,
-  "reason": "源页 term_en 列作 ganzhi / sixty-day，而同一页 def_en 本就一律用 stem-branch（共 8 处）；本仓据以统一，并把「完整一轮」交回 sexagenary cycle，与「两套符号」分工。",
+  "count": 29,
+  "reason": "承用户 2026-10-07 令：核心术语依李约瑟／席文西方科技史规范——「干支」统一作 Sexagenary Cycle、「岁差」作 Precession of the Equinoxes；禁用拼音直译（ganzhi／jiazi／Lichun…）与命理俗译（BaZi／Four Pillars…）。本仓 2026-09 首版所定的 stem-branch／sexagenary cycle 分工，经本次明文取代。",
   "items": [
    {
     "term_zh": "干支",
     "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "term_en",
     "before": "ganzhi / stem-branch",
-    "after": "stem-branch"
+    "after": "Sexagenary Cycle"
    },
    {
     "term_zh": "干支纪日",
     "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "term_en",
     "before": "ganzhi day-count",
-    "after": "stem-branch day-count"
+    "after": "Sexagenary Day-Count"
    },
    {
     "term_zh": "干支纪年",
     "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "term_en",
     "before": "ganzhi year-count",
-    "after": "stem-branch year-count"
+    "after": "Sexagenary Year-Count"
    },
    {
     "term_zh": "六十甲子",
     "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "term_en",
     "before": "the sixty-day cycle",
-    "after": "sexagenary cycle"
+    "after": "the Sixty Binomials of the Sexagenary Cycle"
    },
    {
     "term_zh": "六十甲子纳音",
     "group_zh": "十九 · 术数择日",
+    "col": "term_en",
     "before": "the nayin of the sixty-day cycle",
-    "after": "the nayin of the sexagenary cycle"
+    "after": "the Nayin of the Sexagenary Cycle"
+   },
+   {
+    "term_zh": "岁差",
+    "group_zh": "六 · 星空・坐标・测量",
+    "col": "term_en",
+    "before": "precession",
+    "after": "Precession of the Equinoxes"
+   },
+   {
+    "term_zh": "历书",
+    "group_zh": "一 · 历法・历算",
+    "col": "def_en",
+    "before": "the stem-branch pair",
+    "after": "the sexagenary binomial"
+   },
+   {
+    "term_zh": "历日",
+    "group_zh": "一 · 历法・历算",
+    "col": "def_en",
+    "before": "its stem-branch pair",
+    "after": "its sexagenary binomial"
+   },
+   {
+    "term_zh": "上元",
+    "group_zh": "一 · 历法・历算",
+    "col": "def_en",
+    "before": "a jiazi day",
+    "after": "a chia-tzu day"
+   },
+   {
+    "term_zh": "岁周",
+    "group_zh": "一 · 历法・历算",
+    "col": "def_en",
+    "before": "due to precession.",
+    "after": "due to the precession of the equinoxes."
+   },
+   {
+    "term_zh": "大余・小余",
+    "group_zh": "一 · 历法・历算",
+    "col": "def_en",
+    "before": "yields the stem-branch day",
+    "after": "yields the sexagenary day"
+   },
+   {
+    "term_zh": "闰月",
+    "group_zh": "二 · 岁首・月建・置闰",
+    "col": "def_en",
+    "before": "bring the solar year and the lunar months",
+    "after": "bring the tropical year and the synodic months"
+   },
+   {
+    "term_zh": "章",
+    "group_zh": "二 · 岁首・月建・置闰",
+    "col": "def_en",
+    "before": "the lunar months and the solar years",
+    "after": "the synodic months and the tropical years"
+   },
+   {
+    "term_zh": "节",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "Lichun, Jingzhe and the like",
+    "after": "Beginning of Spring, Awakening of Insects and the like"
+   },
+   {
+    "term_zh": "中气／气",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "Yushui, Chunfen and the like",
+    "after": "Rain Water, Spring Equinox and the like"
+   },
+   {
+    "term_zh": "启蛰",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "now called Jingzhe",
+    "after": "now called Awakening of Insects"
+   },
+   {
+    "term_zh": "三伏",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "the third geng day",
+    "after": "the third keng day"
+   },
+   {
+    "term_zh": "三伏",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "reckoned by stem-branch days",
+    "after": "reckoned by sexagenary days"
+   },
+   {
+    "term_zh": "社日",
+    "group_zh": "三 · 节气・物候",
+    "col": "def_en",
+    "before": "by stem-branch days",
+    "after": "by sexagenary days"
+   },
+   {
+    "term_zh": "干支纪日",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "def_en",
+    "before": "with a stem-branch pair",
+    "after": "with a binomial of the sexagenary cycle"
+   },
+   {
+    "term_zh": "干支纪年",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "def_en",
+    "before": "with stem-branch pairs",
+    "after": "with binomials of the sexagenary cycle"
+   },
+   {
+    "term_zh": "超辰",
+    "group_zh": "四 · 纪日・纪年・时刻",
+    "col": "def_en",
+    "before": "the stem-branch count",
+    "after": "the sexagenary count"
+   },
+   {
+    "term_zh": "朔",
+    "group_zh": "五 · 朔望・月相・交食",
+    "col": "def_en",
+    "before": "the first of a lunar month",
+    "after": "the first of a calendrical month"
+   },
+   {
+    "term_zh": "晦",
+    "group_zh": "五 · 朔望・月相・交食",
+    "col": "def_en",
+    "before": "The final day of a lunar month",
+    "after": "The final day of a calendrical month"
+   },
+   {
+    "term_zh": "胐",
+    "group_zh": "五 · 朔望・月相・交食",
+    "col": "def_en",
+    "before": "The third day of a lunar month",
+    "after": "The third day of a calendrical month"
+   },
+   {
+    "term_zh": "六曜",
+    "group_zh": "十九 · 术数择日",
+    "col": "def_en",
+    "before": "adding the lunar month and day",
+    "after": "adding the calendrical month and day"
+   },
+   {
+    "term_zh": "天赦",
+    "group_zh": "十九 · 术数择日",
+    "col": "def_en",
+    "before": "wuyin in spring, jiawu in summer, wushen in autumn and jiazi in winter",
+    "after": "wu-yin in spring, chia-wu in summer, wu-shen in autumn and chia-tzu in winter"
+   },
+   {
+    "term_zh": "六十甲子纳音",
+    "group_zh": "十九 · 术数择日",
+    "col": "def_en",
+    "before": "the sixty stem-and-branch combinations",
+    "after": "the sixty binomials of the sexagenary cycle"
+   },
+   {
+    "term_zh": "六十甲子纳音",
+    "group_zh": "十九 · 术数择日",
+    "col": "def_en",
+    "before": "jiazi and yichou",
+    "after": "chia-tzu and i-ch'ou"
    }
   ]
  },
@@ -79,16 +252,16 @@
   "exact": 147
  },
  "files": {
-  "glossary_zh_en.csv": 141251,
-  "glossary_zh_en.json": 219128,
-  "glossary_zh_en.jsonl": 205185,
+  "glossary_zh_en.csv": 141456,
+  "glossary_zh_en.json": 219333,
+  "glossary_zh_en.jsonl": 205390,
   "classes.csv": 505,
   "appendix_1.csv": 2109,
   "appendix_2.csv": 769,
   "verification_parity.csv": 33270,
-  "verification_term_revisions.csv": 1576,
+  "verification_term_revisions.csv": 13717,
   "verification_stated_vs_measured.csv": 540,
   "verification_classes.csv": 715,
-  "glossary_term_set.jsonld": 113779
+  "glossary_term_set.jsonld": 113826
  }
 }

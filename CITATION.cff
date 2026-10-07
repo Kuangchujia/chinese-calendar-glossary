@@ -10,13 +10,20 @@ abstract: >-
   占经》卷一百六 / 元《宋史·天文志》/ 明清以来今通用，28 行）、二十八宿星官
   与星数（28 行）。中文页与英文页逐条对拍 279/279 一致。术语对照关系属通用数表
   性质；释义为作者原创表述，以 CC BY 4.0 授权。
+  五语版说明（Simplified Chinese / Traditional Chinese / English / Japanese / Korean）：
+  自 2026-10-07 起，本仓 README、NOTICE 与 README_AI_AGENT 三种文档各出五个语言版本，
+  每件题头设语言切换行；README.md 为英文版，README.zh.md 为中文基准版。
+  文件名一律沿用既定命名，不作更动。该次仅增文档语种，数据件、DOI 与许可均未变更。
+  英译依李约瑟／席文规范重定（v1.2.0，2026-10-07）：英文两列共修订 29 处——term_en 6 处、def_en 23 处，
+  落在 24 条条目上，逐条留档于 verification_term_revisions.csv。「干支」作 Sexagenary Cycle、
+  「岁差」作 Precession of the Equinoxes；节气名一律意译；命理俗译一概排除。标识符未动，DOI 与许可未变。
 authors:
   - family-names: "邝"
     given-names: "楚嘉"
     alias: "虚竹"
     orcid: "https://orcid.org/0009-0002-7650-833X"
-version: "1.0.1"
-date-released: "2026-09-29"
+version: "1.2.0"
+date-released: "2026-10-07"
 doi: "10.5281/zenodo.23028692"
 license: "CC-BY-4.0"
 language: "zho"
@@ -37,6 +44,16 @@ keywords:
   - 节气
   - 干支
   - 距星
+  - 術語對照表
+  - 中國曆法
+  - 距星對照
+  - 术语对照表
+  - 用語対照表
+  - 中国暦法
+  - 暦法用語
+  - 용어 대조표
+  - 중국 역법
+  - 고천문학
   - glossary
   - Chinese English
   - Chinese calendar

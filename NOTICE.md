@@ -1,5 +1,7 @@
 # NOTICE · 许可中文对照说明
 
+**简体中文 ｜ [繁體中文](NOTICE.zh-Hant.md) ｜ [English](NOTICE.en.md) ｜ [日本語](NOTICE.ja.md) ｜ [한국어](NOTICE.ko.md)**
+
 > 本文件是 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 的**中文对照说明**，便于中文读者快速了解授权条件。
 > **具有法律效力的许可文本，以根目录 [`LICENSE`](LICENSE)（官方英文全文）为准。**
 > 下方中文说明为原创翻译与整理，如与英文全文有出入，以英文全文为准。
@@ -38,7 +40,7 @@ Creative Commons Attribution 4.0 International（CC BY 4.0）许可发布。
 —— 要求的署名格式 ——
 
   邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset].
-  2026. v1.0.1. CC BY 4.0.
+  2026. v1.1.0. CC BY 4.0.
 
 —— 关于本数据集的版权状态（须分两层看）——
 

@@ -501,7 +501,7 @@
    "@type": "DefinedTerm",
    "identifier": "54",
    "name": "干支",
-   "alternateName": "stem-branch",
+   "alternateName": "Sexagenary Cycle",
    "termCode": "天文基础 · 时间系统",
    "description": "十天干与十二地支依次相配、六十组一轮的编号法。「干支」原写作「幹枝」，即树干与枝条，起初并不是一组序数符号。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
@@ -528,7 +528,7 @@
    "@type": "DefinedTerm",
    "identifier": "57",
    "name": "六十甲子",
-   "alternateName": "sexagenary cycle",
+   "alternateName": "the Sixty Binomials of the Sexagenary Cycle",
    "termCode": "天文基础 · 时间系统",
    "description": "干支相配的完整一轮。两条序列本可排出 120 个有序对，只因配对限定在同类之内，才只剩六十。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
@@ -537,7 +537,7 @@
    "@type": "DefinedTerm",
    "identifier": "58",
    "name": "干支纪日",
-   "alternateName": "stem-branch day-count",
+   "alternateName": "Sexagenary Day-Count",
    "termCode": "天文基础 · 时间系统",
    "description": "用干支给每一天编号。这套编号连续不断，可用来核对历日。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
@@ -546,7 +546,7 @@
    "@type": "DefinedTerm",
    "identifier": "59",
    "name": "干支纪年",
-   "alternateName": "stem-branch year-count",
+   "alternateName": "Sexagenary Year-Count",
    "termCode": "天文基础 · 时间系统",
    "description": "用干支给年份编号。东汉元和二年（85 年）才以政令推行全国，此前纪年多用岁星、太岁或年号。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-4"
@@ -951,7 +951,7 @@
    "@type": "DefinedTerm",
    "identifier": "104",
    "name": "岁差",
-   "alternateName": "precession",
+   "alternateName": "Precession of the Equinoxes",
    "termCode": "天文基础 · 坐标",
    "description": "地球自转轴的缓慢进动，使春分点沿黄道缓慢西退。《大明历》首次把它引入历法。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-6"
@@ -2526,7 +2526,7 @@
    "@type": "DefinedTerm",
    "identifier": "279",
    "name": "六十甲子纳音",
-   "alternateName": "the nayin of the sexagenary cycle",
+   "alternateName": "the Nayin of the Sexagenary Cycle",
    "termCode": "术数择日 · 纳音",
    "description": "把六十干支每两柱配一个五行名目，如甲子、乙丑为「海中金」，共三十项。见《协纪辨方书》卷三十一，亦见《三命通会》。",
    "inDefinedTermSet": "https://github.com/Kuangchujia/chinese-calendar-glossary#group-19"

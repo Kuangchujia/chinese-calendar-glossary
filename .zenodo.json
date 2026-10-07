@@ -1,7 +1,7 @@
 {
   "title": "中国历法与古天文学术语对照表（中英双语）",
   "upload_type": "dataset",
-  "description": "<p>一份中英双语对照的中国历法与古天文学术语表。主表 <strong>279 条术语</strong>，分 19 组，每条给出中文名、英文定译、分类标签（中英）、中文释义与英文释义，并逐条标出与「术语在线」（全国科学技术名词审定委员会）的对应关系（同名 147 条 / 近名 21 条 / 未收 111 条）。</p><p>19 组覆盖：历法历算、岁首月建置闰、节气物候、纪日纪年时刻、朔望月相交食、星空坐标测量、仪器星官星图、历法沿革行用、五星行星天象、三垣拱极星区、四象二十八宿、星名星表天河宇宙论、月相（今名）、年月周期与时制、十二时称、坐标与中天、特殊天象、仪象器用、术数择日。</p><p><strong>附两张独立对照表</strong>：① 二十八宿距星三源对照（28 行）——逐宿列出唐《开元占经》卷一百六、元《宋史·天文志》与明清以来今通用的不同记载；② 二十八宿星官与星数（28 行）。</p><p><strong>可核验</strong>：中文页与英文页逐条对拍 279/279 一致（不一致 0 条），明细见 <code>verification_parity.csv</code>；分类导航表与正文实测逐项对拍见 <code>verification_classes.csv</code>，其中「术数择日」一行的源页重复计数已如实标注（表载 28 / 实测 14），未改源页。<code>code/verify_glossary.py</code> 为独立校验器，判据与生成器不同源，实测 OK 26 / WARN 2 / FAIL 0。</p><p><strong>使用边界</strong>：英文定译为工作定译，不主张排他；释义为一句话界定，不展开考据；附录一为文献记载的对照，不判定孰是；全表不含任何判断、断语、吉凶宜忌或个体指向。第十九组「术数择日」只收术语名与其界定，不含任何择日方法或用法说明。</p><p><strong>权利</strong>：CC BY 4.0。术语对照关系属通用数表性质，依《中华人民共和国著作权法》第五条不适用该法；释义为作者原创表述，以 CC BY 4.0 授权。</p><p><strong>作者学术索引 / Author academic index.</strong> ORCID <a href=\"https://orcid.org/0009-0002-7650-833X\">0009-0002-7650-833X</a> | OpenAlex <a href=\"https://openalex.org/A5151908354\">A5151908354</a> | <a href=\"https://kuangchujia.com/\">kuangchujia.com</a>.</p>",
+  "description": "<p>一份中英双语对照的中国历法与古天文学术语表。主表 <strong>279 条术语</strong>，分 19 组，每条给出中文名、英文定译、分类标签（中英）、中文释义与英文释义，并逐条标出与「术语在线」（全国科学技术名词审定委员会）的对应关系（同名 147 条 / 近名 21 条 / 未收 111 条）。</p><p>19 组覆盖：历法历算、岁首月建置闰、节气物候、纪日纪年时刻、朔望月相交食、星空坐标测量、仪器星官星图、历法沿革行用、五星行星天象、三垣拱极星区、四象二十八宿、星名星表天河宇宙论、月相（今名）、年月周期与时制、十二时称、坐标与中天、特殊天象、仪象器用、术数择日。</p><p><strong>附两张独立对照表</strong>：① 二十八宿距星三源对照（28 行）——逐宿列出唐《开元占经》卷一百六、元《宋史·天文志》与明清以来今通用的不同记载；② 二十八宿星官与星数（28 行）。</p><p><strong>可核验</strong>：中文页与英文页逐条对拍 279/279 一致（不一致 0 条），明细见 <code>verification_parity.csv</code>；分类导航表与正文实测逐项对拍见 <code>verification_classes.csv</code>，其中「术数择日」一行的源页重复计数已如实标注（表载 28 / 实测 14），未改源页。<code>code/verify_glossary.py</code> 为独立校验器，判据与生成器不同源，实测 OK 26 / WARN 2 / FAIL 0。</p><p><strong>使用边界</strong>：英文定译为工作定译，不主张排他；释义为一句话界定，不展开考据；附录一为文献记载的对照，不判定孰是；全表不含任何判断、断语、吉凶宜忌或个体指向。第十九组「术数择日」只收术语名与其界定，不含任何择日方法或用法说明。</p><p><strong>权利</strong>：CC BY 4.0。术语对照关系属通用数表性质，依《中华人民共和国著作权法》第五条不适用该法；释义为作者原创表述，以 CC BY 4.0 授权。</p><p><strong>五语版（简体中文 / 繁體中文 / English / 日本語 / 한국어）</strong>：自 2026-10-07 起，本仓 README、NOTICE 与 README_AI_AGENT 三种文档各出五个语言版本，每件题头设语言切换行；<code>README.md</code> 为英文版，<code>README.zh.md</code> 为中文基准版，<code>README.zh-Hant.md</code>、<code>README.ja.md</code>、<code>README.ko.md</code> 为新增件。文件名一律沿用既定命名、不作更动。<strong>该次仅增文档语种，数据件、DOI 与许可均未变更。</strong></p><p><strong>英译依李约瑟／席文规范重定（v1.2.0，2026-10-07）</strong>：英文两列不作源页逐字照录，共修订 <strong>29 处</strong>——<code>term_en</code> 6 处、<code>def_en</code> 23 处，落在 24 条条目上，逐条留档于 <code>verification_term_revisions.csv</code>（含「列」一栏）。核心术语依 Joseph Needham 与 Nathan Sivin 的西方科技史规范：「干支」作 <strong>Sexagenary Cycle</strong>（v1.0.0 的 <code>stem-branch</code> 口径已明文取代）、「岁差」作 <strong>Precession of the Equinoxes</strong>；节气名一律意译（<code>Beginning of Spring</code> 等），不用罗马字写法；市面命理俗译（<code>BaZi</code>、<code>Four Pillars</code>、<code>Eight Characters</code>）一概排除；正文中的罗马字日名改用威妥玛。韩语列按同一规范，在每件首次出现处加「韩文(汉字)」并记（如 <code>간지(干支)</code>）。标识符（<code>ganzhi_day</code>、<code>ganzhi_index_1_60</code>、<code>solar_term_month_branch</code> 及其取值、<code>data/ganzhi_day_1900_2052.csv</code>、<code>code/gen_dataset_ganzhi.py</code>）是数据契约而非译名，一律未动。DOI 与许可未变。</p><p><strong>作者学术索引 / Author academic index.</strong> ORCID <a href=\"https://orcid.org/0009-0002-7650-833X\">0009-0002-7650-833X</a> | OpenAlex <a href=\"https://openalex.org/A5151908354\">A5151908354</a> | <a href=\"https://kuangchujia.com/\">kuangchujia.com</a>.</p>",
   "creators": [
     {
       "name": "邝楚嘉",
@@ -23,6 +23,15 @@
     "四象",
     "节气",
     "干支",
+    "術語對照表",
+    "中國曆法",
+    "术语对照表",
+    "用語対照表",
+    "中国暦法",
+    "暦法用語",
+    "용어 대조표",
+    "중국 역법",
+    "고천문학",
     "glossary",
     "Chinese-English terminology",
     "Chinese calendar",
@@ -46,6 +55,6 @@
       "resource_type": "other"
     }
   ],
-  "notes": "术语对照关系属通用数表性质；释义为作者原创表述，以 CC BY 4.0 授权。与配套数据集 chinese-calendar-dataset（节气交节时刻 / 历代历法年表 / 干支纪日）互为配套：本表给「词指什么」，该仓给「数是多少」。作者学术索引：ORCID 0009-0002-7650-833X ｜ OpenAlex 作者号 A5151908354（https://openalex.org/A5151908354）｜ 站点 https://kuangchujia.com 。",
-  "version": "1.0.1"
+  "notes": "术语对照关系属通用数表性质；释义为作者原创表述，以 CC BY 4.0 授权。与配套数据集 chinese-calendar-dataset（节气交节时刻 / 历代历法年表 / 干支纪日）互为配套：本表给「词指什么」，该仓给「数是多少」。五语版：README / NOTICE / README_AI_AGENT 三系列文档各出简体中文、繁體中文、English、日本語、한국어 五个版本（2026-10-07 起），该次仅增文档语种，数据件、DOI 与许可均未变更。v1.2.0：英译依李约瑟／席文规范重定，term_en 6 处 + def_en 23 处（共 29 处），落在 24 条条目上，逐条留档于 verification_term_revisions.csv；标识符未动，DOI 与许可未变。作者学术索引：ORCID 0009-0002-7650-833X ｜ OpenAlex 作者号 A5151908354（https://openalex.org/A5151908354）｜ 站点 https://kuangchujia.com 。",
+  "version": "1.2.0"
 }

@@ -203,35 +203,76 @@ def parse_page(html: str, lang: str):
     return out
 
 
-# ── 英文定译修订表（本仓与源页的已知差异，逐条断言，写盘前生效） ──────────────
+# ── 英文定译规范（2026-10-07 用户令 · 李约瑟／席文西方科技史规范） ─────────────
 #
-# 依据：源页 term_en 列作 `ganzhi`，而同页 def_en **本就一律用 `stem-branch`**
-#       （历书 the stem-branch pair／三伏 reckoned by stem-branch days／
-#        干支纪日 with a stem-branch pair／超辰 the stem-branch count，共 8 处）。
-#       即词条列与自身释义不一致，此处统一到 `stem-branch`。
-#       六十甲子 回 `sexagenary cycle`（该词与 干支 分工：前者指完整一轮，后者指两套符号）。
+# 用户令原文要点：
+#   「核心术语必须遵循李约瑟（Needham）或席文（Nathan Sivin）的西方科技史规范。
+#      '干支'统一译为 Sexagenary Cycle；'岁差'译为 Precession of the equinoxes。
+#      禁止使用拼音直译或市面上的命理八字粗俗译法。」
 #
-# 纪律：改写表写成数据，不写成散文；每条 assert 旧串在 term_en 中恰好命中一条。
+# 旧口径的处置：本仓 2026-09 首版把「干支」定为 `stem-branch`、把「六十甲子」定为
+# `sexagenary cycle`（两者分工：前者指两套符号、后者指完整一轮）。该分工经本令
+# **明文取代** —— 旧句不改、留痕于 `verification_term_revisions.csv`，以本表为准。
+# 规范全文与判据：`_i18n5/三语术语规范·2026-10-07.md` §一。
+#
+# 纪律：改写表写成数据，不写成散文；每条 assert 旧串在目标列中恰好命中 N 次。
 TERM_EN_REVISIONS = {
     "干支":      ("ganzhi / stem-branch",
-                  "stem-branch"),
+                  "Sexagenary Cycle"),
     "干支纪日":   ("ganzhi day-count",
-                  "stem-branch day-count"),
+                  "Sexagenary Day-Count"),
     "干支纪年":   ("ganzhi year-count",
-                  "stem-branch year-count"),
+                  "Sexagenary Year-Count"),
     "六十甲子":   ("the sixty-day cycle",
-                  "sexagenary cycle"),
+                  "the Sixty Binomials of the Sexagenary Cycle"),
     "六十甲子纳音": ("the nayin of the sixty-day cycle",
-                  "the nayin of the sexagenary cycle"),
+                  "the Nayin of the Sexagenary Cycle"),
+    "岁差":      ("precession",
+                  "Precession of the Equinoxes"),
 }
 
-REVISION_REASON = ("源页 term_en 列作 ganzhi / sixty-day，而同一页 def_en 本就一律用 "
-                   "stem-branch（共 8 处）；本仓据以统一，并把「完整一轮」交回 "
-                   "sexagenary cycle，与「两套符号」分工。")
+# 释义层（def_en）同步修订：同一批旧口径 + 节气拼音 + 命理俗译。
+# 键＝term_zh（该词条在本表内唯一）；值＝(旧串, 新串, 期望命中数)。
+DEF_EN_REVISIONS = {
+    "历书":     [("the stem-branch pair", "the sexagenary binomial", 1)],
+    "历日":     [("its stem-branch pair", "its sexagenary binomial", 1)],
+    "上元":     [("a jiazi day", "a chia-tzu day", 1)],
+    "岁周":     [("due to precession.", "due to the precession of the equinoxes.", 1)],
+    "大余・小余":  [("yields the stem-branch day", "yields the sexagenary day", 1)],
+    "闰月":     [("bring the solar year and the lunar months",
+                 "bring the tropical year and the synodic months", 1)],
+    "章":      [("the lunar months and the solar years",
+                 "the synodic months and the tropical years", 1)],
+    "节":      [("Lichun, Jingzhe and the like",
+                 "Beginning of Spring, Awakening of Insects and the like", 1)],
+    "中气／气":   [("Yushui, Chunfen and the like",
+                 "Rain Water, Spring Equinox and the like", 1)],
+    "启蛰":     [("now called Jingzhe", "now called Awakening of Insects", 1)],
+    "三伏":     [("the third geng day", "the third keng day", 1),
+                ("reckoned by stem-branch days", "reckoned by sexagenary days", 1)],
+    "社日":     [("by stem-branch days", "by sexagenary days", 1)],
+    "干支纪日":   [("with a stem-branch pair", "with a binomial of the sexagenary cycle", 1)],
+    "干支纪年":   [("with stem-branch pairs", "with binomials of the sexagenary cycle", 1)],
+    "超辰":     [("the stem-branch count", "the sexagenary count", 1)],
+    "朔":      [("the first of a lunar month", "the first of a calendrical month", 1)],
+    "晦":      [("The final day of a lunar month", "The final day of a calendrical month", 1)],
+    "胐":      [("The third day of a lunar month", "The third day of a calendrical month", 1)],
+    "六曜":     [("adding the lunar month and day", "adding the calendrical month and day", 1)],
+    "天赦":     [("wuyin in spring, jiawu in summer, wushen in autumn and jiazi in winter",
+                 "wu-yin in spring, chia-wu in summer, wu-shen in autumn and chia-tzu in winter", 1)],
+    "六十甲子纳音": [("the sixty stem-and-branch combinations",
+                 "the sixty binomials of the sexagenary cycle", 1),
+                ("jiazi and yichou", "chia-tzu and i-ch'ou", 1)],
+}
+
+REVISION_REASON = ("承用户 2026-10-07 令：核心术语依李约瑟／席文西方科技史规范——"
+                   "「干支」统一作 Sexagenary Cycle、「岁差」作 Precession of the Equinoxes；"
+                   "禁用拼音直译（ganzhi／jiazi／Lichun…）与命理俗译（BaZi／Four Pillars…）。"
+                   "本仓 2026-09 首版所定的 stem-branch／sexagenary cycle 分工，经本次明文取代。")
 
 
 def apply_revisions(recs):
-    """就地修订 term_en；返回修订留档。断言全部置于调用方写盘之前。"""
+    """就地修订 term_en 与 def_en；返回修订留档。断言全部置于调用方写盘之前。"""
     log = []
     for zh, (old, new) in TERM_EN_REVISIONS.items():
         hits = [r for r in recs if r["term_zh"] == zh]
@@ -240,8 +281,40 @@ def apply_revisions(recs):
         assert r["term_en"] == old, (
             f"修订表“{zh}”旧串不符：期望 <{old}>，实得 <{r['term_en']}>")
         r["term_en"] = new
-        log.append({"term_zh": zh, "group_zh": r["group_zh"],
+        log.append({"term_zh": zh, "group_zh": r["group_zh"], "col": "term_en",
                     "before": old, "after": new})
+    for zh, rules in DEF_EN_REVISIONS.items():
+        hits = [r for r in recs if r["term_zh"] == zh]
+        assert len(hits) == 1, f"释义修订表词条“{zh}”命中 {len(hits)} 条，应恰为 1"
+        r = hits[0]
+        for old, new, n in rules:
+            got = r["def_en"].count(old)
+            assert got == n, (
+                f"释义修订“{zh}”旧串 <{old}> 命中 {got} 次，期望 {n} 次")
+            r["def_en"] = r["def_en"].replace(old, new)
+            log.append({"term_zh": zh, "group_zh": r["group_zh"], "col": "def_en",
+                        "before": old, "after": new})
+    # 回读闸：全表不得再残留旧口径术语（用正则，避免「precession of the equinoxes」被裸 precession 误伤）
+    import re as _re
+    RESIDUE = [
+        (r"(?i)\bganzhi\b", "ganzhi"),
+        (r"(?i)\bstem-branch", "stem-branch"),
+        (r"(?i)\bstem-and-branch", "stem-and-branch"),
+        (r"(?i)the sixty-day cycle", "the sixty-day cycle"),
+        (r"(?i)\bprecession\b(?! of the equinoxes)", "裸 precession"),
+        (r"(?i)\b(jiazi|yichou|jiawu|wushen|wuyin)\b", "拼音日名"),
+        (r"(?i)\b(Lichun|Jingzhe|Chunfen|Yushui|Dongzhi|Xiazhi|Xiaohan|Dahan|Qingming"
+         r"|Mangzhong|Bailu|Lixia|Liqiu|Lidong|jieqi)\b", "节气拼音"),
+        (r"(?i)\b(BaZi|Four Pillars|Eight Characters|Chinese zodiac)\b", "命理俗译"),
+    ]
+    residue = []
+    for r in recs:
+        for blob, col in ((r["term_en"], "term_en"), (r["def_en"], "def_en")):
+            for pat, why in RESIDUE:
+                m = _re.search(pat, blob)
+                if m:
+                    residue.append((r["term_zh"], col, why, m.group(0), blob[:70]))
+    assert not residue, "英文定译回读闸：仍残留 %s" % residue
     return log
 
 
@@ -436,11 +509,11 @@ def main():
           p["en_side_zh"], p["en_side_en"],
           "一致" if p["term_match"] else "不一致"] for p in parity])
 
-    # 核验表：本仓对源页英文定译的修订
+    # 核验表：本仓对源页英文定译的修订（2026-10-07 起含 def_en 层）
     written["verification_term_revisions.csv"] = write_csv(
         os.path.join(out, "verification_term_revisions.csv"),
-        ["term_zh", "group_zh", "源页 term_en（修订前）", "本仓 term_en（修订后）", "依据"],
-        [[r["term_zh"], r["group_zh"], r["before"], r["after"], REVISION_REASON]
+        ["term_zh", "group_zh", "列", "源页（修订前）", "本仓（修订后）", "依据"],
+        [[r["term_zh"], r["group_zh"], r["col"], r["before"], r["after"], REVISION_REASON]
          for r in revlog])
 
     # 核验表：源页导读自述 vs 实测

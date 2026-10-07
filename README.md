@@ -1,6 +1,6 @@
 # Chinese Calendrical & Uranographical Glossary (Chinese–English)
 
-**[中文](README.zh.md) ｜ English**
+**[简体中文](README.zh.md) ｜ [繁體中文](README.zh-Hant.md) ｜ English ｜ [日本語](README.ja.md) ｜ [한국어](README.ko.md)**
 
 <!-- badges -->
 
@@ -9,10 +9,10 @@
 > **A bilingual Chinese–English glossary of Chinese calendrical and uranographical terms — downloadable, citable and checkable.**
 > **279 terms** in 19 groups; each gives a **Chinese name · a fixed English rendering · a Chinese definition · an English definition**, and marks its correspondence with Termonline (the terminology platform of China's National Committee for Terms in Sciences and Technologies).
 > Two stand-alone correspondence tables are appended: the **determinative stars of the twenty-eight lunar mansions across three sources** (28 rows) and the **star officers and star counts of the twenty-eight mansions** (28 rows).
-> DOI: 10.5281/zenodo.23028692 ｜ Licence CC BY 4.0 ｜ Version v1.0.1
+> DOI: 10.5281/zenodo.23028692 ｜ Licence CC BY 4.0 ｜ Version v1.2.0
 > **Machine-readable edition (for AI agents and LLM crawlers):** [`README_AI_AGENT.md`](README_AI_AGENT.md) — structured statements of the same facts, field tables and a self-check list.
 
-*A Chinese–English glossary of calendrical and uranographical terms — downloadable, citable and checkable. 279 terms in 19 groups, each with a Chinese name, a fixed English rendering and a definition in both languages, together with its correspondence to Termonline, the terminology platform of China's National Committee for Terms in Sciences and Technologies. Two stand-alone tables are appended: the determinative stars of the twenty-eight lunar mansions across three sources (28 rows), and the star officers and star counts of the twenty-eight mansions (28 rows). DOI: 10.5281/zenodo.23028692 · CC BY 4.0 · v1.0.1. A machine-readable edition is available in `README_AI_AGENT.md`.*
+*A Chinese–English glossary of calendrical and uranographical terms — downloadable, citable and checkable. 279 terms in 19 groups, each with a Chinese name, a fixed English rendering and a definition in both languages, together with its correspondence to Termonline, the terminology platform of China's National Committee for Terms in Sciences and Technologies. Two stand-alone tables are appended: the determinative stars of the twenty-eight lunar mansions across three sources (28 rows), and the star officers and star counts of the twenty-eight mansions (28 rows). DOI: 10.5281/zenodo.23028692 · CC BY 4.0 · v1.2.0. A machine-readable edition is available in `README_AI_AGENT.md`.*
 
 <!-- ANCHOR-BLOCK-BEGIN -->
 ## ★ Where this project sits in the academic network
@@ -52,10 +52,19 @@ The same directory holds five **verification files** (not the data itself, but f
 | File | Role |
 |:---|:---|
 | `data/verification_parity.csv` | Item-by-item comparison of the Chinese and English pages (279 rows) |
-| `data/verification_term_revisions.csv` | The repository's **5 revisions** to the source page's `term_en` (before / after / grounds) |
+| `data/verification_term_revisions.csv` | The repository's **29 revisions** to the source page's English columns (**column** / before / after / grounds) |
 | `data/verification_classes.csv` | Counts as stated in the classification table vs counts as measured, item by item |
 | `data/verification_stated_vs_measured.csv` | What the source page **states** (introduction, footnote) vs what was measured |
 | `data/source_manifest.json` | Source page files, byte counts, md5, **revision time**, publication and modification instants, and the various counts |
+
+### Five-language editions (added 2026-10-07)
+
+Five-language counterparts (zh-Hans / zh-Hant / en / ja / ko) now sit alongside the original files, and **the original files are left untouched**:
+
+`data/glossary_multi5.csv` · `.json` · `.jsonl` — **279** rows × **26** columns, the full table expanded to five languages
+`data/classes_multi5.csv` (**6** rows) · `data/appendix_1_multi5.csv` (**28** rows) · `data/appendix_2_multi5.csv` (**28** rows) · `data/glossary_term_set_multi5.jsonld` (**279** terms)
+
+Two points on scope. In `appendix_1_multi5.csv` the two quotation columns (Tang *Kaiyuan Zhanjing* CVI, Yuan *Songshi · Tianwenzhi*) are **verbatim source text and are not translated** — a translation would no longer be the source. And the five verification files above are **checking records** that quote the source page verbatim (byte counts, md5, before/after revisions), so they stay in their source language.
 
 ---
 
@@ -113,7 +122,7 @@ The fourth column group (`termonline_*`) gives the correspondence with [Termonli
 | `none` not recorded | **111** |
 | **Total** | **279** |
 
-> **⚠ The `term_en` column is not a verbatim transcription of the source page**: **5 rows** have been revised (see section V), and the remaining 274 are byte-identical to the source. `def_zh` / `def_en` / `tag_*` / `termonline_*` are **reproduced verbatim with no change of any kind**.
+> **⚠ The English columns are not a verbatim transcription of the source page**: **24 rows** have been revised (see section V), and the remaining **255** are byte-identical to the source. `def_zh` / `tag_*` / `termonline_*` are **reproduced verbatim with no change of any kind**; the two English columns — `term_en` and the source page's own English definitions (`def_en`) — carry the revisions described in section V.
 
 > **No URLs are stored inside the data files** (a standing constraint of this repository). `termonline_term` holds the **headword** only and the subject as **text**; the search entry point for Termonline is <https://www.termonline.cn/>, where the headword can be looked up. This trade-off can be reversed in a single sentence: to store URLs directly in the data files, change the return value of `parse_termonline()` in `code/build_glossary.py`.
 
@@ -176,40 +185,47 @@ The detailed comparison is in `data/verification_parity.csv`. The check compares
 
 ---
 
-## V. English renderings: the repository's 5 revisions to the source page
+## V. English renderings: 29 revisions to the source page, on the Needham / Sivin standard
 
-**This must be said first**: the `term_en` column of G1 is **not** a verbatim transcription of the source page, but has been **revised in 5 places**. The revisions are logged item by item in `data/verification_term_revisions.csv`. Apart from those 5, the remaining 274 rows are byte-identical to the source.
+**This must be said first**: the English columns of G1 are **not** a verbatim transcription of the source page. They have been **revised in 29 places** — **6** in `term_en` and **23** in `def_en`, across **24 terms**. Every one is logged, with the column it was made in, in `data/verification_term_revisions.csv`. The remaining **255 rows** are byte-identical to the source.
 
-### Why they were changed
+### The standard applied (2026-10-07)
 
-The source page's **own English definitions (`def_en`) already use `stem-branch` throughout** — eight occurrences:
+Core terms follow the Western **history-of-science standard of Joseph Needham and Nathan Sivin**. Two rules are absolute:
 
-| Entry | Usage in the source page's English definition |
-|:---|:---|
-| 历书 (almanac) | each annotated with the phases, the solar terms, the **stem-branch** pair… |
-| 历日 (day of the calendar) | A single day as recorded in the almanac, with its date and its **stem-branch** pair. |
-| 大余・小余 (major and minor remainder) | the integer part, which yields the **stem-branch** day… |
-| 三伏 (the three fu periods) | It is reckoned by **stem-branch** days… |
-| 社日 (community altar day) | reckoned, like the *fu*, by **stem-branch** days. |
-| 干支纪日 (stem-branch day-count) | Numbering every day with a **stem-branch** pair. |
-| 干支纪年 (stem-branch year-count) | Numbering the years with **stem-branch** pairs. |
-| 超辰 (leap of the year station) | This "leap" is one reason the **stem-branch** count displaced it. |
-
-**Yet the same page's `term_en` (the headword column) uses `ganzhi`** — that is, the headword column contradicts the page's own definitions. This repository aligns it to `stem-branch`, on the evidence of those definitions.
-
-### What was changed
-
-| Chinese | Source page `term_en` | This repository's `term_en` |
+| Chinese | Required rendering | Not accepted |
 |:---|:---|:---|
-| 干支 | `ganzhi / stem-branch` | **`stem-branch`** |
-| 干支纪日 | `ganzhi day-count` | **`stem-branch day-count`** |
-| 干支纪年 | `ganzhi year-count` | **`stem-branch year-count`** |
-| 六十甲子 | `the sixty-day cycle` | **`sexagenary cycle`** |
-| 六十甲子纳音 | `the nayin of the sixty-day cycle` | **`the nayin of the sexagenary cycle`** |
+| 干支 | **`Sexagenary Cycle`** | the romanisation `ganzhi`; the literal `stem-branch`; `Heavenly Stems and Earthly Branches` |
+| 岁差 | **`Precession of the Equinoxes`** | the bare word `precession` |
 
-**The division of labour between the two renderings**: `干支` denotes **two sets of signs** (the ten stems and the twelve branches, i.e. `stem-branch`); `六十甲子` denotes **one complete round formed by pairing those two sets** (i.e. `sexagenary cycle`). The source page renders `六十甲子` as `the sixty-day cycle`, where `day` is too narrow — a Jia-Zi designation counts years as well as days.
+Romanisation is not accepted as a term rendering anywhere. Solar-term names are rendered by **meaning**, not by sound — `Beginning of Spring`, not the romanised form; `Awakening of Insects`, not the romanised form. The marketplace's fate-calculation renderings — `BaZi`, `Four Pillars`, `Eight Characters` — are excluded outright; where the almanac practice must be referred to, the text says **traditional calendrical teaching materials**.
 
-> **How the changes are implemented**: as an explicit revision table, `TERM_EN_REVISIONS`, in `code/build_glossary.py`, each entry carrying an `assert` (the old string must match exactly one row, and match what was expected); all assertions precede any disk write. **The changes are made at those 5 places and nowhere else, and each can be checked afterwards.**
+### What changed
+
+| Chinese | Column | Source page | This repository |
+|:---|:---|:---|:---|
+| 干支 | `term_en` | `ganzhi / stem-branch` | **`Sexagenary Cycle`** |
+| 干支纪日 | `term_en` | `ganzhi day-count` | **`Sexagenary Day-Count`** |
+| 干支纪年 | `term_en` | `ganzhi year-count` | **`Sexagenary Year-Count`** |
+| 六十甲子 | `term_en` | `the sixty-day cycle` | **`the Sixty Binomials of the Sexagenary Cycle`** |
+| 六十甲子纳音 | `term_en` | `the nayin of the sixty-day cycle` | **`the Nayin of the Sexagenary Cycle`** |
+| 岁差 | `term_en` | `precession` | **`Precession of the Equinoxes`** |
+| 历书 ／ 历日 ／ 大余・小余 ／ 三伏 ／ 社日 ／ 干支纪日 ／ 干支纪年 ／ 超辰 | `def_en` | the literal `stem-branch` throughout (8 places) | `sexagenary binomial` ／ `sexagenary days` ／ `sexagenary count` |
+| 闰月 ／ 章 | `def_en` | `the solar year and the lunar months` | `the tropical year and the synodic months` |
+| 朔 ／ 晦 ／ 胐 ／ 六曜 | `def_en` | `a lunar month` | `a calendrical month` |
+| 节 ／ 中气／气 ／ 启蛰 | `def_en` | the romanised term names | `Beginning of Spring`, `Awakening of Insects`, `Rain Water`, `Spring Equinox` |
+| 岁周 | `def_en` | `due to precession.` | `due to the precession of the equinoxes.` |
+| 上元 ／ 天赦 ／ 六十甲子纳音 | `def_en` | romanised binomials | **Wade-Giles** (`chia-tzu`, `i-ch'ou`, `chia-wu`, `wu-shen`, `wu-yin`) |
+
+### Superseded wording, kept as evidence
+
+The repository's first release (2026-09-29) rendered 干支 as `stem-branch` and 六十甲子 as `sexagenary cycle`, splitting the two by scope. **That split is superseded — explicitly, and as of 2026-10-07 — by the standard above**: 干支 itself is `Sexagenary Cycle`. The old wording is retained in this section and in `data/verification_term_revisions.csv` as evidence; **where the two differ, this section governs.**
+
+> **How the changes are implemented**: as two explicit revision tables, `TERM_EN_REVISIONS` (headword column) and `DEF_EN_REVISIONS` (definition column), in `code/build_glossary.py`. Every entry carries an `assert` on the expected number of matches, and a read-back gate re-scans both columns for any surviving old form. All checks sit **before** any disk write. **The revisions are made at these places and nowhere else, and each can be checked afterwards.**
+
+### Identifiers are not term renderings
+
+The data schema keeps its original identifiers: `ganzhi_day`, `ganzhi_index_1_60`, `solar_term_month_branch` and its values, `data/ganzhi_day_1900_2052.csv`, `code/gen_dataset_ganzhi.py`. These are **contracts, not renderings** — renaming them would break every downstream join and every existing citation. They are therefore left untouched by this standard, and the documentation keeps quoting them as they are.
 
 ### The remaining 5 two-source differences: unchanged
 
@@ -238,7 +254,7 @@ Dataset DOI: `10.5281/zenodo.23028692` ｜ Permanent link: <https://doi.org/10.5
 
 **Attribution format (please cite as follows)**:
 
-> Chujia Kuang (邝楚嘉). Chinese Calendrical & Uranographical Glossary (Chinese–English) [Dataset]. Zenodo. 2026. v1.0.1. CC BY 4.0. DOI: 10.5281/zenodo.23028692
+> Chujia Kuang (邝楚嘉). Chinese Calendrical & Uranographical Glossary (Chinese–English) [Dataset]. Zenodo. 2026. v1.2.0. CC BY 4.0. DOI: 10.5281/zenodo.23028692
 
 ---
 
@@ -307,6 +323,9 @@ The two are **companions, each standing as its own repository**: this one says w
 | 2026-09-29 | 1.0.0 | First release: 279 terms / 19 groups / 25 second-level subclasses; Chinese–English item-by-item parity 279/279 (0 mismatches); Termonline correspondence 147 same name / 21 close name / 111 not recorded; appendices giving the determinative stars of the twenty-eight mansions across three sources (28 rows) and star officers and star counts (28 rows); plus a schema.org `DefinedTermSet` semantic file. Zenodo DOI 10.5281/zenodo.23028692. Source page revised 2026-09-26. The repeated count in the classification table's "术数择日" row is stated as it stands (28 in table / 14 measured), with a table comparing what the source page states against what was measured. **Five English renderings were revised** (干支 → stem-branch, 六十甲子 → sexagenary cycle, etc.), unifying them on the evidence of the source page's own English definitions, which already used stem-branch; logged item by item in verification_term_revisions.csv. Generation, verification and licence all in place; the verifier is independent of the generator, OK 24 / WARN 2 / FAIL 0. |
 | 2026-09-29 | 1.0.1 | **Correction of the published DOI convention.** v1.0.0's README and CITATION.cff published the **version-level record number** (not the concept number; per house rule the number is not repeated in this README), which contradicted §1 of the *Overseas Publication Rules · 2026-09-20* — "one concept DOI per collection, and that alone is published" — since a version number stops at the old version (a chain that lags behind). This version moves uniformly to the **concept DOI** `10.5281/zenodo.23028692` (collection-level, permanently pointing to the latest version), with version numbers kept to git commit messages only. `README_AI_AGENT.md` gained a line for the concept DOI, matching the sibling repository's style. The verifier gained a seventh group of criteria, "published DOI convention", with 2 items, so the count rose from 24 to 26; the `.zenodo.json` description, which still recorded OK 17 / WARN 1 (an old value from an early round), was corrected to this version's measured values. **Not one data file was touched**: 279 rows / 19 groups / two appendices of 28 × 2 are identical to v1.0.0. Verification OK 26 / WARN 2 / FAIL 0. |
 
+| 2026-10-07 | 1.1.0 | Five-language edition (**Simplified Chinese / Traditional Chinese / English / Japanese / Korean**): the README now ships in five languages with a language switcher at the head of each file. `README.md` remains the English edition and `README.zh.md` the Chinese governing edition; `README.zh-Hant.md`, `README.ja.md` and `README.ko.md` are added. **No data file, DOI or licence changed.** |
+| 2026-10-07 | 1.2.0 | **English renderings re-based on the Needham / Sivin standard.** Six `term_en` and twenty-three `def_en` entries revised (29 in all), logged column by column in `data/verification_term_revisions.csv`: 干支 → **Sexagenary Cycle** (replacing the v1.0.0 `stem-branch` rendering, which is **superseded**), 岁差 → **Precession of the Equinoxes**, 六十甲子 → the Sixty Binomials of the Sexagenary Cycle; romanised solar-term names replaced by meaning renderings; the marketplace's fate-calculation renderings removed; `the solar year and the lunar months` → `the tropical year and the synodic months`; `a lunar month` → `a calendrical month`; romanised binomials in running text given in Wade-Giles. **All changes sit behind asserted revision tables in `code/build_glossary.py`, with a read-back gate; no JSON key or file name changed** (identifiers are contracts, not renderings). Korean columns now carry the required **Hangul (Hanja) joint notation** on first occurrence per entry (`간지(干支)`), per the same standard. No DOI or licence changed. |
+
 ---
 
-*This is the English edition of the repository README. Where the two editions differ, the Chinese edition [`README.zh.md`](README.zh.md) governs the repository description; both carry the same tables, row for row.*
+*This is the English edition of the repository README. Where the editions differ, the Chinese edition [`README.zh.md`](README.zh.md) governs the repository description; all editions carry the same tables, row for row.*

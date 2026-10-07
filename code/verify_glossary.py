@@ -237,35 +237,62 @@ def main():
     print("=" * 68)
     print("四之二 · 英文定译修订与一致性")
     print("=" * 68)
-    res = list(csv.reader(io.StringIO(
-        read_bytes(os.path.join(D, "verification_term_revisions.csv")).decode("utf-8-sig"))))
-    revs = {r[0]: (r[2], r[3]) for r in res[1:]}
-    applied = all(r["term_en"] == revs[r["term_zh"]][1]
-                  for r in rows if r["term_zh"] in revs)
-    if revs and applied:
-        ok(f"修订件 {len(revs)} 条，主表已逐条落实")
-    else:
-        fail("修订件与主表不一致")
+    raw = read_bytes(os.path.join(D, "verification_term_revisions.csv")).decode("utf-8-sig")
+    res = list(csv.reader(io.StringIO(raw)))
+    # ★ 一律**按表头名**取值 —— 2026-10-07 v1.2.0 在「列」处插了一栏，
+    #   旧版按位置索引取 r[2]／r[3] 会整体右移一位，把「修订前」当成「修订后」，
+    #   于是拿主表比旧值 ⇒ 恒假红。（列位写死是不可复用的判据，见 §四 注）
+    hdr = {h: i for i, h in enumerate(res[0])}
+    for need in ("term_zh", "列", "源页（修订前）", "本仓（修订后）"):
+        assert need in hdr, "修订件缺列「%s」：%s" % (need, res[0])
+    rev = [dict(zip(res[0], r)) for r in res[1:] if r and r[0]]
+    assert rev, "修订件为空 —— 判据失效，停"
+    en_rev = [r for r in rev if r["列"] == "term_en"]
+    de_rev = [r for r in rev if r["列"] == "def_en"]
+    assert len(en_rev) + len(de_rev) == len(rev), "修订件「列」栏取值越界"
 
-    # term_en 列不得残留 pinyin 主词 ganzhi / 也不得残留 sixty-day
-    left = [(r["id"], r["term_zh"], r["term_en"]) for r in rows
-            if re.search(r"ganzhi|sixty-day", r["term_en"], re.I)]
+    idx = {r["term_zh"]: r for r in rows}
+    bad_en = [(r["term_zh"], r["源页（修订前）"], r["本仓（修订后）"], idx[r["term_zh"]]["term_en"])
+              for r in en_rev
+              if r["term_zh"] not in idx or idx[r["term_zh"]]["term_en"] != r["本仓（修订后）"]]
+    bad_de = []
+    for r in de_rev:
+        d = idx.get(r["term_zh"], {}).get("def_en")
+        # 改后串须在；改前串须已不在（同一释义内可能多处，故用 in）
+        if d is None or r["本仓（修订后）"] not in d or r["源页（修订前）"] in d:
+            bad_de.append((r["term_zh"], r["源页（修订前）"], r["本仓（修订后）"],
+                           (d or "")[:40]))
+    if not bad_en and not bad_de:
+        ok(f"修订件 {len(rev)} 条（term_en {len(en_rev)} ／ def_en {len(de_rev)}），主表已逐条落实")
+    else:
+        if bad_en:
+            fail(f"term_en 层 {len(bad_en)} 条未落实：{bad_en[:3]}")
+        if bad_de:
+            fail(f"def_en 层 {len(bad_de)} 条未落实：{bad_de[:3]}")
+
+    # 残留闸：词表＝《三语术语规范·2026-10-07》§1.1／1.2／1.3 的「禁用」栏
+    #   （本仓不自带规范件，故此表须与规范件同步修订；断言非空，免出「零命中」假绿）
+    RESIDUE = [
+        (r"(?i)\bganzhi\b", "拼音 ganzhi"),
+        (r"(?i)\b(jiazi|yi-chou|jia-zi)\b", "拼音日名"),
+        (r"(?i)\bstem-branch", "stem-branch（v1.1.x 旧口径，已被取代）"),
+        (r"(?i)Heavenly Stems and Earthly Branches", "字面直译"),
+        (r"(?i)the sixty-day cycle", "六十甲子旧译"),
+        (r"(?i)\bprecession\b(?! of the equinoxes)", "裸 precession"),
+        (r"(?i)\bsolar years?\b", "回归年旧译"),
+        (r"(?i)\blunar months?\b", "朔望月旧译"),
+        (r"(?i)\b(BaZi|Four Pillars|Eight Characters|Chinese zodiac)\b", "命理俗译／生肖混用"),
+        (r"(?i)\b(Lichun|Jingzhe|Qingming|Dongzhi|Xiazhi|Xiaohan|Dahan|Mangzhong"
+         r"|Bailu|Lixia|Liqiu|Lidong|Chunfen|Qiufen|Yushui|Guyu|jieqi)\b", "节气拼音"),
+    ]
+    assert RESIDUE, "残留词表为空 —— 判据失效，停"
+    left = [(r["id"], r["term_zh"], why, col) for r in rows
+            for col in ("term_en", "def_en")
+            for pat, why in RESIDUE if re.search(pat, r[col])]
     if left:
-        fail(f"term_en 列残留 ganzhi/sixty-day {len(left)} 处：{left}")
+        fail(f"主表残留禁用译法 {len(left)} 处：{left[:5]}")
     else:
-        ok("term_en 列无 ganzhi / sixty-day 残留（已统一为 stem-branch / sexagenary cycle）")
-
-    # 词条列与其自身英文释义是否同用 stem-branch（源页本就如此，本仓据以统一）
-    head = {r["term_zh"] for r in rows if "stem-branch" in r["term_en"]}
-    body = {r["term_zh"] for r in rows if "stem-branch" in r["def_en"]}
-    only_head = sorted(head - body)
-    if not only_head:
-        ok(f"term_en 与 def_en 的 stem-branch 口径一致"
-           f"（词条 {len(head)} 条，释义 {len(body)} 条）")
-    else:
-        # 「干支」释义讲词源（幹枝＝树干与枝条），本就不用该词，属正常
-        print(f"  [note] term_en 用 stem-branch 而 def_en 未用者 {len(only_head)} 条："
-              f"{only_head}（释义讲词源，属正常）")
+        ok("term_en／def_en 无禁用译法残留（干支＝Sexagenary Cycle、岁差＝Precession of the Equinoxes）")
 
     # 同一英文对应多个中文 headword：多为「古名／今名」同译，属页面体例
     dup = {}
@@ -360,7 +387,7 @@ def main():
     #   该号归 git commit 信息与 Zenodo 版本列表。此处记一笔，免得日后又加回去。
     CONCEPT_DOI = "10.5281/zenodo.23028692"
     VERSION_DOI = "10.5281/zenodo.23028693"
-    LIVE = ["README.md", "README.zh.md", "README_AI_AGENT.md", "NOTICE.md", "CITATION.cff"]
+    LIVE = ["README.md", "README_AI_AGENT.md", "NOTICE.md", "CITATION.cff"]
     ver_hits, con_hits = [], []
     for fn in LIVE:
         p = os.path.join(root, fn)

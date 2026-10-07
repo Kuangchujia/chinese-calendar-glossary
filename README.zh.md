@@ -1,6 +1,6 @@
 # Chinese Calendrical & Uranographical Glossary（中国历法与古天文学术语对照表·中英双语）
 
-**中文 ｜ [English](README.md)**
+**简体中文 ｜ [繁體中文](README.zh-Hant.md) ｜ [English](README.md) ｜ [日本語](README.ja.md) ｜ [한국어](README.ko.md)**
 
 <!-- badges -->
 
@@ -9,10 +9,10 @@
 > **一套中英双语对照的中国历法与古天文学术语表，可下载、可引用、可核验。**
 > **279 条术语**，分 19 组；每条给**中文名 · 英文定译 · 中文释义 · 英文释义**四项，并标出与「术语在线」（全国科学技术名词审定委员会）的对应关系。
 > 附两张独立对照表：**二十八宿距星三源对照**（28 行）、**二十八宿星官与星数**（28 行）。
-> DOI：10.5281/zenodo.23028692 ｜ 许可 CC BY 4.0 ｜ 版本 v1.0.1
+> DOI：10.5281/zenodo.23028692 ｜ 许可 CC BY 4.0 ｜ 版本 v1.2.0
 > **机器可读版（面向 AI Agent 与 LLM 爬虫）**：[`README_AI_AGENT.md`](README_AI_AGENT.md) —— 同一批事实的结构化声明、字段表与自校验清单。
 
-*A Chinese–English glossary of calendrical and uranographical terms — downloadable, citable and checkable. 279 terms in 19 groups, each with a Chinese name, a fixed English rendering and a definition in both languages, together with its correspondence to Termonline, the terminology platform of China's National Committee for Terms in Sciences and Technologies. Two stand-alone tables are appended: the determinative stars of the twenty-eight lunar mansions across three sources (28 rows), and the star officers and star counts of the twenty-eight mansions (28 rows). DOI: 10.5281/zenodo.23028692 · CC BY 4.0 · v1.0.1. A machine-readable edition is available in `README_AI_AGENT.md`.*
+*A Chinese–English glossary of calendrical and uranographical terms — downloadable, citable and checkable. 279 terms in 19 groups, each with a Chinese name, a fixed English rendering and a definition in both languages, together with its correspondence to Termonline, the terminology platform of China's National Committee for Terms in Sciences and Technologies. Two stand-alone tables are appended: the determinative stars of the twenty-eight lunar mansions across three sources (28 rows), and the star officers and star counts of the twenty-eight mansions (28 rows). DOI: 10.5281/zenodo.23028692 · CC BY 4.0 · v1.2.0. A machine-readable edition is available in `README_AI_AGENT.md`.*
 
 <!-- ANCHOR-BLOCK-BEGIN -->
 ## ★ 本项目在学术网络中的位置
@@ -52,10 +52,19 @@
 | 文件 | 作用 |
 |:---|:---|
 | `data/verification_parity.csv` | 中文页与英文页**逐条对拍**结果（279 行） |
-| `data/verification_term_revisions.csv` | 本仓对源页 `term_en` 的 **5 处修订**（修订前／后／依据） |
+| `data/verification_term_revisions.csv` | 本仓对源页英文两列的 **29 处修订**（含**列**／修订前／后／依据） |
 | `data/verification_classes.csv` | 分类导航表**表载条数 vs 实测条数**逐项对拍 |
 | `data/verification_stated_vs_measured.csv` | 源页**自述**（导读／脚注）与实测对拍 |
 | `data/source_manifest.json` | 源页文件、字节数、md5、**修订时间**、发布／修改时点、各项计数 |
+
+### 五语版（2026-10-07 增）
+
+五种语言（简／繁／英／日／韩）的对照件与原文件并存，**原文件一字未动**：
+
+`data/glossary_multi5.csv` · `.json` · `.jsonl` —— **279** 行 × **26** 列，全表展开为五语
+`data/classes_multi5.csv`（**6** 行）· `data/appendix_1_multi5.csv`（**28** 行）· `data/appendix_2_multi5.csv`（**28** 行）· `data/glossary_term_set_multi5.jsonld`（**279** 词条）
+
+范围上有两点要说明。`appendix_1_multi5.csv` 的两列引文（唐《开元占经》卷一百六、元《宋史·天文志》）是**古籍原文照录，不作翻译**——译了就不是原文。上面五件核验件则是**复核记录**，逐字引用源页（字节数、md5、修订前后），故保持源语言。
 
 ---
 
@@ -113,7 +122,7 @@
 | `none` 未收 | **111** |
 | **合计** | **279** |
 
-> **⚠ `term_en` 列不是源页的逐字照录**：其中 **5 条**已作修订（见第五节），其余 274 条与源页逐字相同。`def_zh` / `def_en` / `tag_*` / `termonline_*` **一律照录，未作任何改动**。
+> **⚠ 英文两列不是源页的逐字照录**：其中 **24 条**已作修订（见第五节），其余 **255 条**与源页逐字相同。`def_zh` / `tag_*` / `termonline_*` **一律照录，未作任何改动**；`term_en` 与源页自身的英文释义（`def_en`）两列则按第五节所述作了修订。
 
 > **数据件内不放网址**（本仓既定硬线）。`termonline_term` 只存**词条名**，学科只存**文字**；术语在线的检索入口为 <https://www.termonline.cn/>，按词条名检索即可。此取舍可一句话改：若需在数据件内直存 URL，改 `code/build_glossary.py` 中 `parse_termonline()` 的返回即可。
 
@@ -176,52 +185,47 @@
 
 ---
 
-## 五、英文定译：本仓与源页的 5 处修订
+## 五、英文定译：依李约瑟／席文规范，对源页的 29 处修订
 
-**必须先说清楚**：本仓 G1 的 `term_en` 列**不是源页的逐字照录**，而是作了 **5 处修订**。修订之处逐条留档于 `data/verification_term_revisions.csv`。除这 5 处，其余 274 条与源页逐字相同。
+**必须先说清楚**：本仓 G1 的英文两列**不是源页的逐字照录**，而是作了 **29 处修订**——`term_en` **6 处**、`def_en` **23 处**，共落在 **24 条**条目上。修订之处逐条留档于 `data/verification_term_revisions.csv`（含「列」一栏）。除这 24 条，其余 **255 条**与源页逐字相同。
 
-### 为什么改
+### 依据（2026-10-07 立）
 
-源页**自身的英文释义（`def_en`）本就一律用 `stem-branch`**——共 8 处：
+核心术语依**李约瑟（Joseph Needham）／席文（Nathan Sivin）西方科技史规范**。两条为硬性：
 
-| 条目 | 源页英文释义中的用法 |
-|:---|:---|
-| 历书 | each annotated with the phases, the solar terms, the **stem-branch** pair… |
-| 历日 | A single day as recorded in the almanac, with its date and its **stem-branch** pair. |
-| 大余・小余 | the integer part, which yields the **stem-branch** day… |
-| 三伏 | It is reckoned by **stem-branch** days… |
-| 社日 | reckoned, like the *fu*, by **stem-branch** days. |
-| 干支纪日 | Numbering every day with a **stem-branch** pair. |
-| 干支纪年 | Numbering the years with **stem-branch** pairs. |
-| 超辰 | This "leap" is one reason the **stem-branch** count displaced it. |
+| 中文 | 规范英译 | 不予采用 |
+|:---|:---|:---|
+| 干支 | **`Sexagenary Cycle`** | 罗马字 `ganzhi`、字面直译 `stem-branch`、`Heavenly Stems and Earthly Branches` |
+| 岁差 | **`Precession of the Equinoxes`** | 单写 `precession` |
 
-**而同一页的 `term_en`（词条列）却作 `ganzhi`** —— 即词条列与它自己的释义不一致。本仓据释义统一到 `stem-branch`。
+罗马字**不得充当术语译名**。节气名一律**意译**（`Beginning of Spring`，而非其罗马字写法；`Awakening of Insects`，而非其罗马字写法）。市面命理俗译——`BaZi`、`Four Pillars`、`Eight Characters`——一概排除；确需指涉择日实践时，写 **traditional calendrical teaching materials**。
 
 ### 改了什么
 
-| 中文 | 源页 `term_en` | 本仓 `term_en` |
-|:---|:---|:---|
-| 干支 | `ganzhi / stem-branch` | **`stem-branch`** |
-| 干支纪日 | `ganzhi day-count` | **`stem-branch day-count`** |
-| 干支纪年 | `ganzhi year-count` | **`stem-branch year-count`** |
-| 六十甲子 | `the sixty-day cycle` | **`sexagenary cycle`** |
-| 六十甲子纳音 | `the nayin of the sixty-day cycle` | **`the nayin of the sexagenary cycle`** |
+| 中文 | 列 | 源页 | 本仓 |
+|:---|:---|:---|:---|
+| 干支 | `term_en` | `ganzhi / stem-branch` | **`Sexagenary Cycle`** |
+| 干支纪日 | `term_en` | `ganzhi day-count` | **`Sexagenary Day-Count`** |
+| 干支纪年 | `term_en` | `ganzhi year-count` | **`Sexagenary Year-Count`** |
+| 六十甲子 | `term_en` | `the sixty-day cycle` | **`the Sixty Binomials of the Sexagenary Cycle`** |
+| 六十甲子纳音 | `term_en` | `the nayin of the sixty-day cycle` | **`the Nayin of the Sexagenary Cycle`** |
+| 岁差 | `term_en` | `precession` | **`Precession of the Equinoxes`** |
+| 历书 ／ 历日 ／ 大余・小余 ／ 三伏 ／ 社日 ／ 干支纪日 ／ 干支纪年 ／ 超辰 | `def_en` | 字面直译 `stem-branch`（共 8 处） | `sexagenary binomial` ／ `sexagenary days` ／ `sexagenary count` |
+| 闰月 ／ 章 | `def_en` | `the solar year and the lunar months` | `the tropical year and the synodic months` |
+| 朔 ／ 晦 ／ 胐 ／ 六曜 | `def_en` | `a lunar month` | `a calendrical month` |
+| 节 ／ 中气／气 ／ 启蛰 | `def_en` | 节气名的罗马字写法 | `Beginning of Spring`、`Awakening of Insects`、`Rain Water`、`Spring Equinox` |
+| 岁周 | `def_en` | `due to precession.` | `due to the precession of the equinoxes.` |
+| 上元 ／ 天赦 ／ 六十甲子纳音 | `def_en` | 罗马字日名 | 威妥玛（`chia-tzu`、`i-ch'ou`、`chia-wu`、`wu-shen`、`wu-yin`） |
 
-**两条定译的分工**：`干支` 指**两套符号**（十干十二支，即 `stem-branch`）；`六十甲子` 指**两套符号相配成的完整一轮**（即 `sexagenary cycle`）。源页把 `六十甲子` 作 `the sixty-day cycle`，`day` 字偏窄——甲子既能纪日也能纪年。
+### 旧口径已明文取代
 
-> **改动的落地方式**：写成 `code/build_glossary.py` 里的显式改写表 `TERM_EN_REVISIONS`，每条带 `assert`（旧串必须恰好命中一条、且与预期相符），断言全部置于写盘之前。**改在且只改在这 5 处，改完可逐条核对。**
+首版（2026-09-29）把「干支」定为 `stem-branch`、「六十甲子」定为 `sexagenary cycle`，以范围分工。**该分工自 2026-10-07 起被上表明文取代**——「干支」本身即 `Sexagenary Cycle`。旧句在本节与 `data/verification_term_revisions.csv` 中作为**留痕**保留；**两者不一致时，以本节为准。**
 
-### 余下 5 处两源差异：未改
+> **改法**：在 `code/build_glossary.py` 内写成两张显式修订表——`TERM_EN_REVISIONS`（词条列）与 `DEF_EN_REVISIONS`（释义列），每条带 `assert`（旧串须命中预期次数），并设回读闸重扫两列是否残留旧形。**全部断言置于写盘之前**，改动只在这两处、且事后可逐条复核。
 
-另有 5 条术语，源页与另一份内部术语表（非本仓内容）写法不同，**本仓照源页保留**：
+### 标识符不是译名
 
-| 中文 | 本仓（＝源页） |
-|:---|:---|
-| 旬 | the ten-day week |
-| 岁首 | year-beginning |
-| 岁星纪年 | Jupiter year-reckoning |
-| 太岁纪年 | counter-Jupiter year-reckoning |
-| 超辰 | the leap of the year station |
+数据模式保留原有标识符：`ganzhi_day`、`ganzhi_index_1_60`、`solar_term_month_branch` 及其取值、`data/ganzhi_day_1900_2052.csv`、`code/gen_dataset_ganzhi.py`。它们是**契约而非译名**——改名即打断所有下游连接与既有引用。故本规范不动它们，文档亦照原样引用。
 
 ---
 
@@ -238,7 +242,7 @@
 
 **署名格式（请照此引用）**：
 
-> 邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset]. Zenodo. 2026. v1.0.1. CC BY 4.0. DOI: 10.5281/zenodo.23028692
+> 邝楚嘉（Chujia Kuang）. 中国历法与古天文学术语对照表（中英双语）[Dataset]. Zenodo. 2026. v1.2.0. CC BY 4.0. DOI: 10.5281/zenodo.23028692
 
 ---
 
@@ -306,3 +310,5 @@ python code/verify_glossary.py
 |:---|:---|:---|
 | 2026-09-29 | 1.0.0 | 首次发布：术语 279 条 / 19 组 / 25 个二级子类；中英逐条对表 279/279 一致（0 不符）；与术语在线对标 147 同名 / 21 近名 / 111 未收；附二十八宿距星三源对照 28 行、星官与星数 28 行；另出 schema.org `DefinedTermSet` 语义件。Zenodo DOI 10.5281/zenodo.23028692。源页修订时间 2026-09-26。分类表「术数择日」行源页重复计数已如实标注（表载 28 / 实测 14），并附源页自述与实测对拍表。**英文定译另作 5 处修订**（干支→stem-branch、六十甲子→sexagenary cycle 等），依源页自身英文释义本就用 stem-branch 这一内部不一致而统一，逐条留档于 verification_term_revisions.csv。生成、校验、许可三件齐备；校验器独立于生成器，OK 24 / WARN 2 / FAIL 0。 |
 | 2026-09-29 | 1.0.1 | **对外 DOI 口径修正**。v1.0.0 的 README／CITATION.cff 对外公布的是**版本级记录号**（非概念号；依家规不复写于本 README），与《海外发布规则·2026-09-20》§一「每合集一个概念 DOI，对外只公布这一个」相抵——版本号会停在旧版（链式追尾）。本版统一改为**概念 DOI** `10.5281/zenodo.23028692`（合集级，永久指向最新版），版本号只进 git commit 信息。`README_AI_AGENT.md` 补概念 DOI 一行，对齐配套仓体例。校验器增第七组判据「对外 DOI 口径」2 项，故计数由 24 项升至 26 项；`.zenodo.json` 描述内原记 OK 17 / WARN 1（早期一轮旧值），一并订正为本版实测值。**数据件一字未动**：279 条 / 19 组 / 两附录 28×2 与 v1.0.0 完全相同。校验 OK 26 / WARN 2 / FAIL 0。 |
+| 2026-10-07 | 1.1.0 | 五语版：README 出 **简体中文／繁體中文／English／日本語／한국어** 五语，各件题头置语言切换行。`README.md` 为英文主版、`README.zh.md` 为中文治理版；新增 `README.zh-Hant.md`／`README.ja.md`／`README.ko.md`。**数据件、DOI、许可均未变。** |
+| 2026-10-07 | 1.2.0 | **英译改依李约瑟／席文规范重定。** `term_en` 6 处、`def_en` 23 处（共 29 处），逐条留档于 `data/verification_term_revisions.csv`（含「列」一栏）：干支 → **Sexagenary Cycle**（v1.0.0 的 `stem-branch` 口径**已明文取代**）、岁差 → **Precession of the Equinoxes**、六十甲子 → the Sixty Binomials of the Sexagenary Cycle；节气名由罗马字改写改为意译；市面命理俗译（`BaZi`、`Four Pillars`、`Eight Characters`）移除；`the solar year and the lunar months` → `the tropical year and the synodic months`；`a lunar month` → `a calendrical month`；正文中的罗马字日名改用威妥玛。**全部改动置于 `code/build_glossary.py` 的断言式修订表之后，并设回读闸；JSON 键名与文件名一律未动**（标识符是契约，不是译名）。韩语列按同一规范，在每件首次出现处加**韩文（汉字）并记**（如 `간지(干支)`）。DOI 与许可未变。 |
